@@ -1,263 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/QR.css">
-    <link rel="stylesheet" href="../assets/libri/MDB5-STANDARD-UI-KIT-Free-8.1.0/css/mdb.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Public Cards</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <!-- Google Fonts -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f2f2f3;
+      }
 
+      .card img {
+        height: 150px;
+        object-fit: contain;
+      }
 
-</head>
+      .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
 
-<body>
-    <section id="section-0" class="sec-pad is-animated" style="opacity: 1;"><div class="layout-1 "><div class="container "><div class="row"><div class="col-sm-12 text-left">    <style>
-        :root {
-            /* font sizes */
-            --subtitle-bold-size: 1rem;
-            --title-bold-28-size: 1.75rem;
+      .card-text {
+        color: #6c757d;
+      }
 
-            /* Colors */
-            --color-white: #fff;
-            --background-color: #f2f2f3;
-            --secondary: #0077ff;
-            --sup-title-color: #898989;
-            --primary: #a9cb37;
-            --title-color: #5a5a5a;
+      .btn-custom {
+        background-color: #0077ff;
+        color: #fff;
+        text-transform: capitalize;
+      }
 
-            /* Gaps */
-            --gap-31xl: 3.13rem;
-            --gap-5xl: 1.5rem;
-            --gap-lg: 1.13rem;
-            --gap-sm: 0.88rem;
-
-            /* Paddings */
-            --padding-xs: 0.75rem;
-            --padding-3xl: 1.38rem;
-
-            /* border radiuses */
-            --br-21xl: 40px;
-            --br-sm: 14px;
-            --br-61xl: 80px;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        .card-icon6 {
-            width: 18.75rem;
-            height: 11.56rem !important;
-            object-fit: contain;
-        }
-
-        .virtual-mastercard-standard3 {
-            position: relative;
-            line-height: 1.5rem;
-            text-transform: capitalize;
-        }
-
-        .pay-eat-and1 {
-            margin: 0;
-        }
-
-        .btn {
-            margin-top: 0px !important;
-            color: #FFFFFF !important;
-            text-transform: capitalize !important;
-        }
-
-        .btn-description6,
-        .physical10 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-        }
-
-        .btn-description6 {
-            gap: var(--gap-sm);
-            text-align: center;
-            color: var(--sup-title-color);
-            font-family: var(--subtitle);
-        }
-
-        .physical10 {
-            gap: var(--gap-lg);
-        }
-
-        .card-alinnent6 {
-            color: var(--title-color);
-        }
-
-        .card-alinnent7,
-        .physical11 {
-            display: flex;
-            justify-content: flex-start;
-        }
-
-        .physical11 {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .card-alinnent7 {
-            overflow: hidden;
-            flex-direction: row;
-            align-items: flex-start;
-            gap: var(--gap-5xl);
-            color: var(--title-color);
-        }
-
-        .physical16 {
-            color: var(--sup-title-color);
-        }
-
-        .card-alinnent13,
-        .intro-card,
-        .physical16 {
-            display: flex;
-            justify-content: flex-start;
-        }
-
-        .card-alinnent13 {
-            overflow: hidden;
-            flex-direction: row;
-            align-items: flex-start;
-            gap: var(--gap-5xl);
-            color: var(--sup-title-color);
-        }
-
-        .intro-card {
-            border-radius: 0.5rem;
-            background-color: var(--background-color);
-            flex-direction: column;
-            padding: 3.13rem 2rem;
-            align-items: self-start !important;
-            gap: var(--gap-31xl);
-            margin-bottom: var(--gap-31xl);
-        }
-
-        @media screen and (max-width: 782px) {
-
-            .intro-card {
-                border-radius: 0.5rem;
-                padding: 2rem;
-                gap: 0;
-            }
-        }
+      .btn-custom:hover {
+        background-color: #0056b3;
+      }
     </style>
-<div class="intro-card">
-    <div class="col-12 ">
-        <h2>Public Cards</h2>
-    </div>
-    <div class="col-12">
-        <div class="physical11 col-12  col-md-4">
-            <div class="physical10">
-                <div class="virtual-mastercard-standard3" style="text-align: center;"><strong><img alt="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-1-1.png" class="size-medium wp-image-42155 aligncenter lazyloaded" src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-1-1.png"><noscript><img
-                            
-                             alt="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-1-1.png" class="size-medium wp-image-42155 aligncenter lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img
-                            class="size-medium wp-image-42155 aligncenter"
-                            src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-1-1.png" alt="" /></noscript>Ministry
-                        of Public Works and Transportation</strong></div>
-                <div class="btn-description6">
-                    <div class="virtual-mastercard-standard3" style="text-align: center;">
-                        <p class="pay-eat-and1">More convenient to pay your bills of Ministry of Public Works and
-                            Transportation through Wing<br>Card Annual Fee Free</p>
-                    </div>
-                    <div class="text-center" style="text-align: center;"><a class="btn" href="https://www.wingbank.com.kh/en/mpwt/" data-count="2" data-all="2">Learn More</a></div>
-                </div>
-            </div>
-        </div>
-        <div class="physical11 col-12  col-md-4">
-            <div class="physical10">
-                <div class="virtual-mastercard-standard3" style="text-align: center;"><strong><img alt="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-3.png" class="size-medium wp-image-42155 aligncenter lazyloaded" src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-3.png" style="opacity: 1;"><noscript><img
-                            class="size-medium wp-image-42155 aligncenter"
-                            src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-3.png" alt="" /></noscript>Ministry
-                        of Civil Service Card</strong></div>
-                <div class="btn-description6">
-                    <div class="virtual-mastercard-standard3" style="text-align: center;">
-                        <p class="pay-eat-and1">Generic Offer<br>Card Annual Fee Free</p>
-                    </div>
-                    <div class="text-center" style="text-align: center;"><a class="btn" href="https://www.wingbank.com.kh/en/ministry-of-civil-service-card/" data-count="2" data-all="2">Learn More</a></div>
-                </div>
-            </div>
-        </div>
-        <div class="physical11 col-12  col-md-4">
-            <div class="physical10">
-                <div class="virtual-mastercard-standard3" style="text-align: center;"><strong><img alt="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-5-1.png" class="size-medium wp-image-42155 aligncenter lazyloaded" src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-5-1.png"><noscript><img
-                            class="size-medium wp-image-42155 aligncenter"
-                            src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-5-1.png" alt="" /></noscript>MLVT
-                        Card</strong></div>
-                <div class="btn-description6">
-                    <div class="virtual-mastercard-standard3" style="text-align: center;">
-                        <p class="pay-eat-and1">Generic Offer<br>Card Annual Fee Free</p>
-                    </div>
-                    <div class="text-center" style="text-align: center;"><a class="btn" href="#" data-count="2" data-all="2">Learn More</a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-12">
-        <div class="physical11 col-12  col-md-4">
-            <div class="physical10">
-                <div class="virtual-mastercard-standard3" style="text-align: center;"><strong><img alt="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-7-1.png" class="size-medium wp-image-42155 aligncenter lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
-                            class="size-medium wp-image-42155 aligncenter"
-                            src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-7-1.png" alt="" /></noscript>PTT
-                        WingBank Card</strong></div>
-                <div class="btn-description6">
-                    <div class="virtual-mastercard-standard3" style="text-align: center;">
-                        <p class="pay-eat-and1">Generic Offer<br>Card Annual Fee Free</p>
-                    </div>
-                    <div class="text-center" style="text-align: center;"><a class="btn" href="#" data-count="2" data-all="2">Learn More</a></div>
-                </div>
-            </div>
-        </div>
-        <div class="physical11 col-12  col-md-4">
-            <div class="physical10">
-                <div class="virtual-mastercard-standard3" style="text-align: center;"><strong><img alt="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Card-01new.png" class="size-medium wp-image-42155 aligncenter lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
-                            class="size-medium wp-image-42155 aligncenter"
-                            src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Card-01new.png" alt="" /></noscript>City
-                        Bus Card</strong></div>
-                <div class="btn-description6">
-                    <div class="virtual-mastercard-standard3" style="text-align: center;">
-                        <p class="pay-eat-and1">Have a swift and easy ride with Cambodia's first cashless travel
-                            card!<br>Card Annual Fee Free</p>
-                    </div>
-                    <div class="text-center" style="text-align: center;"><a class="btn" href="https://www.wingbank.com.kh/en/citybus/" data-count="2" data-all="2">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="physical11 col-12  col-md-4">
-            <div class="physical10">
-                <div class="virtual-mastercard-standard3" style="text-align: center;"><strong><img alt="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-1-1.png" class="size-medium wp-image-42155 aligncenter lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
-                            
-                             alt="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-1-1.png" class="size-medium wp-image-42155 aligncenter lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img
-                            class="size-medium wp-image-42155 aligncenter"
-                            src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-1-1.png" alt="" /></noscript>National
-                        Social Security Fund</strong></div>
-                <div class="btn-description6">
-                    <div class="virtual-mastercard-standard3" style="text-align: center;">
-                        <p class="pay-eat-and1">Easy Cash out - direct to their Wing Account<br>Card Annual Fee from
-                            $0.25/txn</p>
-                    </div>
-                    <div class="text-center" style="text-align: center;"><a class="btn" href="https://www.wingbank.com.kh/en/nssf/" data-count="2" data-all="2">Learn More</a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div></div></div></div></div><div class="space-bottom "></div></section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="../assets/libri/MDB5-STANDARD-UI-KIT-Free-8.1.0/js/mdb.umd.min.js"></script>
-</body>
+  </head>
 
+  <body>
+    <section class="py-5">
+      <div class="container">
+        <h2 class="mb-5 text-center">Public Cards</h2>
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-4">
+            <div class="card h-100 text-center">
+              <img
+                src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-1-1.png"
+                alt="Card Image"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Ministry of Public Works and Transportation
+                </h5>
+                <p class="card-text">
+                  More convenient to pay your bills through Wing. Card Annual
+                  Fee Free.
+                </p>
+                <a
+                  href="https://www.wingbank.com.kh/en/mpwt/"
+                  class="btn btn-custom"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-12 col-md-4">
+            <div class="card h-100 text-center">
+              <img
+                src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-3.png"
+                alt="Card Image"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ministry of Civil Service Card</h5>
+                <p class="card-text">Generic Offer. Card Annual Fee Free.</p>
+                <a
+                  href="https://www.wingbank.com.kh/en/ministry-of-civil-service-card/"
+                  class="btn btn-custom"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-12 col-md-4">
+            <div class="card h-100 text-center">
+              <img
+                src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-5-1.png"
+                alt="Card Image"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">MLVT Card</h5>
+                <p class="card-text">Generic Offer. Card Annual Fee Free.</p>
+                <a href="#" class="btn btn-custom">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-12 col-md-4">
+            <div class="card h-100 text-center">
+              <img
+                src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-7-1.png"
+                alt="Card Image"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">PTT WingBank Card</h5>
+                <p class="card-text">Generic Offer. Card Annual Fee Free.</p>
+                <a href="#" class="btn btn-custom">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="col-12 col-md-4">
+            <div class="card h-100 text-center">
+              <img
+                src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Card-01new.png"
+                alt="Card Image"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">City Bus Card</h5>
+                <p class="card-text">
+                  Have a swift and easy ride with Cambodia's first cashless
+                  travel card! Card Annual Fee Free.
+                </p>
+                <a
+                  href="https://www.wingbank.com.kh/en/citybus/"
+                  class="btn btn-custom"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="col-12 col-md-4">
+            <div class="card h-100 text-center">
+              <img
+                src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-1-1.png"
+                alt="Card Image"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">National Social Security Fund</h5>
+                <p class="card-text">
+                  Easy cash out - direct to Wing Account. Card Annual Fee from
+                  $0.25/txn.
+                </p>
+                <a
+                  href="https://www.wingbank.com.kh/en/nssf/"
+                  class="btn btn-custom"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

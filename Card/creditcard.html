@@ -1,248 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Credit Cards</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/css/QR.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/libri/MDB5-STANDARD-UI-KIT-Free-8.1.0/css/mdb.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/QR.css">
-    <link rel="stylesheet" href="../assets/libri/MDB5-STANDARD-UI-KIT-Free-8.1.0/css/mdb.min.css">
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <!-- Google Fonts -->
-
-
-</head>
-
-<body>
-    <section id="section-0" class="sec-pad is-animated" style="opacity: 1;">
-        <div class="layout-1 ">
-            <div class="container ">
-                <div class="row">
-                    <div class="col-sm-12 text-left">
-                        <p>
-                            <style>
-                                :root {
-                                    /* font sizes */
-                                    --subtitle-bold-size: 1rem;
-                                    --title-bold-28-size: 1.75rem;
-
-                                    /* Colors */
-                                    --color-white: #fff;
-                                    --background-color: #f2f2f3;
-                                    --secondary: #0077ff;
-                                    --sup-title-color: #898989;
-                                    --primary: #a9cb37;
-                                    --title-color: #5a5a5a;
-
-                                    /* Gaps */
-                                    --gap-31xl: 3.13rem;
-                                    --gap-5xl: 1.5rem;
-                                    --gap-lg: 1.13rem;
-                                    --gap-sm: 0.88rem;
-
-                                    /* Paddings */
-                                    --padding-xs: 0.75rem;
-                                    --padding-3xl: 1.38rem;
-
-                                    /* border radiuses */
-                                    --br-21xl: 40px;
-                                    --br-sm: 14px;
-                                    --br-61xl: 80px;
-                                }
-
-                                * {
-                                    box-sizing: border-box;
-                                }
-
-                                .card-icon6 {
-                                    width: 18.75rem;
-                                    height: 11.56rem !important;
-                                    object-fit: contain;
-                                }
-
-                                .virtual-mastercard-standard3 {
-                                    position: relative;
-                                    line-height: 1.5rem;
-                                    text-transform: capitalize;
-                                }
-
-                                .pay-eat-and1 {
-                                    margin: 0;
-                                }
-
-                                .btn {
-                                    margin-top: 0px !important;
-                                    color: #FFFFFF !important;
-                                    text-transform: capitalize !important;
-                                }
-
-                                .btn-description6,
-                                .physical10 {
-                                    display: flex;
-                                    flex-direction: column;
-                                    align-items: center;
-                                    justify-content: flex-start;
-                                }
-
-                                .btn-description6 {
-                                    gap: var(--gap-sm);
-                                    text-align: center;
-                                    color: var(--sup-title-color);
-                                    font-family: var(--subtitle);
-                                }
-
-                                .physical10 {
-                                    gap: var(--gap-lg);
-                                }
-
-                                .card-alinnent6 {
-                                    color: var(--title-color);
-                                }
-
-                                .card-alinnent7,
-                                .physical11 {
-                                    display: flex;
-                                    justify-content: flex-start;
-                                }
-
-                                .physical11 {
-                                    flex-direction: column;
-                                    align-items: center;
-                                }
-
-                                .card-alinnent7 {
-                                    overflow: hidden;
-                                    flex-direction: row;
-                                    align-items: flex-start;
-                                    gap: var(--gap-5xl);
-                                    color: var(--title-color);
-                                }
-
-                                .physical16 {
-                                    color: var(--sup-title-color);
-                                }
-
-                                .card-alinnent13,
-                                .intro-card,
-                                .physical16 {
-                                    display: flex;
-                                    justify-content: flex-start;
-                                }
-
-                                .card-alinnent13 {
-                                    overflow: hidden;
-                                    flex-direction: row;
-                                    align-items: flex-start;
-                                    gap: var(--gap-5xl);
-                                    color: var(--sup-title-color);
-                                }
-
-                                .intro-card {
-                                    border-radius: 0.5rem;
-                                    background-color: var(--background-color);
-                                    flex-direction: column;
-                                    padding: 3.13rem 2rem;
-                                    align-items: self-start !important;
-                                    gap: var(--gap-31xl);
-                                    margin-bottom: var(--gap-31xl);
-                                }
-
-                                @media screen and (max-width: 782px) {
-
-                                    .intro-card {
-                                        border-radius: 0.5rem;
-                                        gap: 0;
-                                        padding: 2rem;
-                                    }
-                                }
-                            </style>
-                        </p>
-                        <div class="intro-card">
-                            <div class="title col-12 ">
-                                <div class="frame3">
-                                    <h2>កាតឥណទាន</h2>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="physical11 col-12  col-md-4">
-                                    <div class="physical10">
-                                        <div class="virtual-mastercard-standard3" style="text-align: center;">
-                                            <strong><img class="size-medium wp-image-42155 aligncenter lazyloaded"
-                                                    style="opacity: 1;"
-                                                    src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-6.png"
-                                                    alt=""
-                                                    data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-6.png"><noscript><img
-                                                        alt=""
-                                                        data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-6.png"
-                                                        class="size-medium wp-image-42155 aligncenter lazyload"
-                                                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img
-                                                            alt=""
-                                                            data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-6.png"
-                                                            class="size-medium wp-image-42155 aligncenter lazyload"
-                                                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img
-                                                                class="size-medium wp-image-42155 aligncenter"
-                                                                src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-6.png"
-                                                                alt="" /></noscript>វីងក្រេឌីតកាត&nbsp;វីសាផ្លាទីនីម
-                                            </strong>
-                                        </div>
-                                        <div class="btn-description6">
-                                            <div class="virtual-mastercard-standard3" style="text-align: center;">
-                                                <p class="pay-eat-and1">ការចូលប្រើកន្លែងទទួលភ្ញៀវ Wing Premier
-                                                    គ្មានដែនកំណត់ និងកន្លែងទទួលភ្ញៀវនៅអាកាសយានដ្ឋានអន្តរជាតិចំនួន 8
-                                                    ដង<br>ថ្លៃសេវាកាតប្រចាំឆ្នាំ&ZeroWidthSpace; ហ្រ្វី</p>
-                                            </div>
-                                            <div class="text-center" style="text-align: center;"><a class="btn"
-                                                    href="https://www.wingbank.com.kh/km/visa-gold-credit-card-and-visa-platinum-credit-card/"
-                                                    data-count="2"
-                                                    data-all="2">ស្វែង&ZeroWidthSpace;យល់&ZeroWidthSpace;បន្ថែម</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="physical11 col-12  col-md-4">
-                                    <div class="physical10">
-                                        <div class="virtual-mastercard-standard3" style="text-align: center;">
-                                            <strong><img class="size-medium wp-image-42155 aligncenter lazyloaded"
-                                                    style="opacity: 1;"
-                                                    src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-1@300x.png"
-                                                    alt=""
-                                                    data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-1@300x.png"><noscript><img
-                                                        alt=""
-                                                        data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-1@300x.png"
-                                                        class="size-medium wp-image-42155 aligncenter lazyload"
-                                                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img
-                                                            class="size-medium wp-image-42155 aligncenter"
-                                                            src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-1@300x.png"
-                                                            alt="" /></noscript>វីងក្រេឌីតកាត&nbsp;វីសាហ្គោល</strong>
-                                        </div>
-                                        <div class="btn-description6">
-                                            <div class="virtual-mastercard-standard3" style="text-align: center;">
-                                                <p class="pay-eat-and1">* ការចូលប្រើកន្លែងសម្រាកនៅអាកាសយានដ្ឋានជាសកល 2
-                                                    ដង<br>ថ្លៃសេវាកាតប្រចាំឆ្នាំ&ZeroWidthSpace; ហ្រ្វី</p>
-                                            </div>
-                                            <div class="text-center" style="text-align: center;"><a class="btn"
-                                                    href="https://www.wingbank.com.kh/km/visa-gold-credit-card-and-visa-platinum-credit-card/"
-                                                    data-count="2"
-                                                    data-all="2">ស្វែង&ZeroWidthSpace;យល់&ZeroWidthSpace;បន្ថែម</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <body>
+    <section id="section-0" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="text-primary">កាតឥណទាន</h2>
         </div>
-        <div class="space-bottom "></div>
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-6.png"
+                class="card-img-top p-3"
+                alt="Visa Platinum"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">វីងក្រេឌីតកាត វីសាផ្លាទីនីម</h5>
+                <p class="card-text">
+                  ការចូលប្រើកន្លែងទទួលភ្ញៀវ Wing Premier គ្មានដែនកំណត់
+                  និងកន្លែងទទួលភ្ញៀវនៅអាកាសយានដ្ឋានអន្តរជាតិចំនួន 8 ដង<br />
+                  ថ្លៃសេវាកាតប្រចាំឆ្នាំ ហ្រ្វី
+                </p>
+                <a
+                  href="https://www.wingbank.com.kh/km/visa-gold-credit-card-and-visa-platinum-credit-card/"
+                  class="btn btn-primary"
+                  >ស្វែងយល់បន្ថែម</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Asset-1@300x.png"
+                class="card-img-top p-3"
+                alt="Visa Gold"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">វីងក្រេឌីតកាត វីសាហ្គោល</h5>
+                <p class="card-text">
+                  ការចូលប្រើកន្លែងសម្រាកនៅអាកាសយានដ្ឋានជាសកល 2 ដង<br />
+                  ថ្លៃសេវាកាតប្រចាំឆ្នាំ ហ្រ្វី
+                </p>
+                <a
+                  href="https://www.wingbank.com.kh/km/visa-gold-credit-card-and-visa-platinum-credit-card/"
+                  class="btn btn-primary"
+                  >ស្វែងយល់បន្ថែម</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="../assets/libri/MDB5-STANDARD-UI-KIT-Free-8.1.0/js/mdb.umd.min.js"></script>
-</body>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/libri/MDB5-STANDARD-UI-KIT-Free-8.1.0/js/mdb.umd.min.js"></script>
+  </body>
 </html>
