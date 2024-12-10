@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/css/QR.css">
+  <link rel="stylesheet" href="../assets/libri/MDB5-STANDARD-UI-KIT-Free-8.1.0/css/mdb.min.css">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+
+
+</head>
+
+<body>
+
+    <section id="section-0" class="sec-pad is-animated" style="opacity: 1;"><div class="layout-1 "><div class="container "><div class="row"><div class="col-sm-12 text-left"><!-- Noted : this landing page style css will set globale next wingank website V2 (2024) -->
+        <!-- style  -->
+        <style>
+            .background-card {
+                border-radius: 10px;
+                background-color: #f5f6f8;
+                padding: 16px;
+            }
+        
+            .col-xs-6 .background-card {
+                margin-bottom: 24px;
+                height: auto;
+            }
+        
+            .col-md-4 .background-card {
+                margin-bottom: 24px;
+                text-align: center;
+                height: 268px;
+            }
+        
+            .cta-img-m {
+                display: none;
+            }
+        
+            .cta-img-d {
+                display: block;
+            }
+        
+            .btn-cta a {
+                display: flex;
+                padding: 0.5rem 1rem 0.5rem 1rem;
+                align-items: flex-start;
+                gap: 0.5rem;
+                border-radius: 0.625rem;
+                background: #CCE4FF;
+                align-items: center;
+            }
+        
+            .btn-cta a {
+                color: #0077ff;
+                font-weight: bold;
+                margin-bottom: 16px;
+            }
+        
+            .btn-cta :hover {
+                background: #0077ff;
+                color: #ffffff;
+            }
+        
+            /* tabview style  */
+        
+            .tabs::before,
+            .tabs::after {
+                content: "";
+                display: table;
+            }
+        
+            .tabs::after {
+                clear: both;
+            }
+        
+            .tabs {
+                display: inline-flex;
+                margin: 0 0 1rem 0;
+                padding: 3px 6px;
+                width: 100%;
+                background: #ECF4FF;
+                border-radius: 16px;
+            }
+        
+            .tab-switch {
+                display: none;
+            }
+        
+            .tab-label {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                padding: 8px;
+                border-radius: 12px;
+                color: #0077FF;
+                cursor: pointer;
+                top: 0;
+                transition: all 0.25s;
+            }
+        
+            .tab-label:hover {
+                top: -0.25rem;
+                transition: top 0.25s;
+            }
+        
+            .tab-switch:checked+.tab-label {
+                justify-content: center;
+                background: #CCE4FF;
+                color: #0077ff;
+                transition: all 0.35s;
+                font-weight: bold;
+                z-index: 1;
+            }
+        
+            .tab-switch:checked+label+.tab-content {
+                z-index: 2;
+                opacity: 1;
+                transition: all 0.35s;
+            }
+        
+            /* End tabview style  */
+        
+            @media screen and (max-width: 480px) {
+                table {
+                    margin: 0px !important;
+                    width: 100% !important;
+                }
+        
+                .btn-cta a {
+                    display: flex;
+                    width: auto;
+                    align-items: center;
+                    justify-content: center;
+                }
+        
+                .col-md-4 .background-card {
+                    height: auto;
+                }
+        
+                .cta-img-m {
+                    display: block;
+                    text-align: center;
+                    margin-top: 24px;
+                }
+        
+                .col-md-8 {
+                    margin-bottom: 24px;
+                }
+        
+                .cta-img-d {
+                    display: none;
+                }
+            }
+        </style>
+        <!-- End style  -->
+        
+        <!-- intro  -->
+        <div class="background-card">
+            <p>ផ្ទេរប្រាក់ពីប្រទេសថៃមកកម្ពុជាដោយរលូនជាមួយសេវាផ្ទេរប្រាក់ easy2send របស់
+                2C2P ដែលជាសេវាផ្ទេរប្រាក់ត្រូវបានបង្កើតឡើងដើម្បីផ្តល់នូវភាពងាយស្រួល និងធានានូវបទពីសោធន៍ផ្ទេរប្រាក់ដែលអាចទុកចិត្តបាន។ ទទួលយកភាពងាយស្រួលនៃការផ្ទេរប្រាក់ឆ្លងប្រទេសតាម easy2send បន្ថែមជាមួយនូវភាពបត់បែននៃការទទួលប្រាក់ ដោយអ្នកអាចផ្ទេរទៅកាន់
+                គណនីរបស់អ្នកទទួលដោយផ្ទាល់ ឬដកជាសាច់ប្រាក់បាននៅតាមវីងគ្រប់ទីកន្លែង។</p>
+            <img alt="" data-src="https://dev.wingbank.com.kh/wp-content/uploads/2023/12/2C2P-banner-1.png" class=" lazyloaded" src="https://dev.wingbank.com.kh/wp-content/uploads/2023/12/2C2P-banner-1.png"><noscript><img src="https://dev.wingbank.com.kh/wp-content/uploads/2023/12/2C2P-banner-1.png" alt=""></noscript>
+        </div>
+        <div class="space-bottom "></div>
+        <!-- Section Benefits -->
+        <div>
+            <h3><strong>អត្ថប្រយោជន៍</strong></h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="background-card">
+                        <img alt="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/10/Affordable.png" class=" lazyloaded" src="https://www.wingbank.com.kh/wp-content/uploads/2023/10/Affordable.png" style="opacity: 1;"><noscript><img
+                                 alt="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/10/Affordable.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
+                                src="https://www.wingbank.com.kh/wp-content/uploads/2023/10/Affordable.png" alt=""></noscript>
+                        <h5><strong>ថ្លៃសេវាផ្ទេរប្រាក់ទាប</strong></h5>
+                        <p>ផ្តល់ជូននូវសេវា&ZeroWidthSpace;ចាប់ពី 99&ZeroWidthSpace; ថៃបាតឡើងទៅ អត្រាប្តូរប្រាក់ថេរ និងគ្មានថ្លៃសេវាបន្ថែម។</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="background-card">
+                        <img alt="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/10/Fast.png" class=" lazyloaded" src="https://www.wingbank.com.kh/wp-content/uploads/2023/10/Fast.png" style="opacity: 1;"><noscript><img
+                                 alt="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/10/Fast.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
+                                src="https://www.wingbank.com.kh/wp-content/uploads/2023/10/Fast.png" alt=""></noscript>
+                        <h5><strong>វ៉លឡេតតែមួយប្រើប្រាស់បានគ្រប់ប្រតិបត្តិការ</strong></h5>
+                        <p>មធ្យោបាយផ្ទេរប្រាក់មកកាន់ប្រទេសកម្ពុជាតាមវីង មានច្រើនជម្រើស។</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="background-card">
+                        <img alt="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/12/Real-time.png" class=" lazyloaded" src="https://www.wingbank.com.kh/wp-content/uploads/2023/12/Real-time.png" style="opacity: 1;"><noscript><img
+                                 alt="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/12/Real-time.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
+                                src="https://www.wingbank.com.kh/wp-content/uploads/2023/12/Real-time.png" alt=""></noscript>
+                        <h5><strong>រហ័ស</strong></h5>
+                        <p>ផ្ទេរប្រាក់ដោយគ្រាន់តែចុចពីរបីជំហានងាយៗ នោះអ្នកទទួលនឹងអាចទទួលបានភ្លាមៗ។</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="background-card">
+                        <img alt="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/10/secure.png" class=" lazyloaded" src="https://www.wingbank.com.kh/wp-content/uploads/2023/10/secure.png" style="opacity: 1;"><noscript><img
+                                 alt="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/10/secure.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
+                                src="https://www.wingbank.com.kh/wp-content/uploads/2023/10/secure.png" alt=""></noscript>
+                        <h5><strong>សុវត្ថិភាពខ្ពស់</strong></h5>
+                        <p>ប្រាកដបានថាប្រាក់ដែលផ្ទេរនឹងគ្មានការបាត់បង់។</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space-bottom "></div>
+        <!-- វីង App How to Transfer Money with easy2send -->
+        <!-- How to of service  -->
+        <h3><strong>របៀប</strong></h3>
+        <p></p>
+        <!-- tabview  -->
+        <div class="tabs">
+            <div class="tab tab-label" onclick="openCity('send')"><input type="radio" name="css-tabs" id="tab-1" checked="" class="tab-switch">
+                <label for="tab-1" class="tab-label">
+                    ផ្ទេរប្រាក់
+                </label>
+            </div>
+            <div class="tab tab-label" onclick="openCity('receive')"><input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+                <label for="tab-2" class="tab-label">
+                    ទទួលប្រាក់
+                </label>
+            </div>
+        </div>
+        <!-- send  -->
+        <div id="send" class="card">
+            <div class="background-card">
+                <div>
+        
+                    <h6><strong>របៀបផ្ទេរប្រាក់តាម easy2send</strong></h6>
+                    <!-- វីង App -->
+        
+                    <ul>
+                        <li>ចុះឈ្មោះប្រើប្រាស់:<a><strong> ដោយបំពេញព័ត៌មា&ZeroWidthSpace;នផ្ទេរប្រាក់របស់អ្នក</strong> </a></li>
+                        <li>ការផ្ទៀងផ្ទាត់:<a><strong>2C2P នឹងដំណើរការការផ្ទៀងផ្ទាត់គណនីរបស់អ្នក </strong></a></li>
+                        <li>បញ្ចូលុយ:<a><strong> បញ្ចូលុយទៅកាន់ easyWallet របស់អ្នក </strong></a></li>
+                        <li>ផ្ទេរប្រាក់:<a><strong>បន្ទាប់ពីការចុះឈ្មោះអនុម័ត អ្នកនឹងទទួលបាន កាត easyWallet,
+                                    ដែលអនុញ្ញាតឲ្យអ្នកផ្ទេរប្រាក់បានតាមបណ្តាញជាច្រើន ទាំងអនឡាញ និងដោយផ្ទាល់។ 
+                                </strong></a></li>
+                    </ul>
+                    <p> ដើម្បីផ្ទេរប្រាក់សូមមើលតាមជំហានងាយៗខាងក្រោម</p>
+                    <h6>អនឡាញ</h6>
+                    <ul>
+                        <li>ចូលទៅកាន់ផេក easyWallet</li>
+                        <li> សម្រាប់ការផ្ទេរប្រាក់លើកដំបូង អ្នកត្រូវតែបង្កើតគណនី easyWallet តាមវេបសាយជាមុនសិន  </li>
+                        <li> បំពេញលេខទូរស័ព្ទដែលអ្នកបានប្រើសម្រាប់ការចុះឈ្មោះ easy2send </li>
+                        <li> អ្នកនឹងទទួលបានលេខកូដ OTP តាមរយៈសារ SMS ដើម្បីបញ្ជាក់  </li>
+                        <li> បង្កើតលេខកូដសម្ងាត់សម្រាប់គណនី </li>
+                        <li> ចូលប្រើប្រាស់គ្រប់ពេល តាមរយៈលេខទូរស័ព្ទ និងលេខកូដសម្រាប់ផ្ទេរប្រាក់  </li>
+                        <li> អ្នកក៏អាចបន្ថែមឈ្មោះអ្នកទទួលថ្មី ពីលើបញ្ជីឈ្មោះអ្នកទទួលដែលអ្នកបានរៀបរាប់ក្នុងអំឡុងពេលចុះឈ្មោះប្រើប្រាស់
+                            easy2send របស់អ្នក។</li>
+                    </ul>
+                    <h6>ដោយផ្ទាល់ </h6>
+                    <ul>
+                        <li>
+                            ទៅកាន់បញ្ជរដៃគូ ដោយភ្ជាប់ជាមួយកាត easyWallet (សូមពិនិត្យមើលឈ្មោះដៃគូដែលមានបញ្ជាក់នៅលើកាត
+                            easyWallet)  </li>
+                        <li>
+                            នៅបញ្ជរដៃគូ នឹងមានបុគ្គលិកដែលអាចជួយលោកអ្នក ដើម្បីធ្វើប្រតិបត្តិការផ្ទេរប្រាក់ សូមបញ្ជាក់ថាថ្លៃសេវានឹងត្រូវបានគិត។ 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- receive  -->
+        <div id="receive" class="card" style="display: none;">
+            <div class="background-card">
+                <!-- វីង App -->
+                <div>
+                    <!-- <h6><strong>How to receive money</strong></h6> -->
+                    <div>
+                        <h6><strong>ទទួលតាមគណនីធនាគារ វីងផ្ទាល់</strong></h6>
+                        <p>អ្នកទទួលមិនតម្រូវឲ្យធ្វើអ្វីទាំងអស់ លុយនឹងវេរចូលទៅក្នុងគណនីធនាគារ វីងរបស់ពួកគេភ្លាមៗ បន្ទាប់ពីប្រតិបត្តិការផ្ទេរប្រាក់បានជោគជ័យ។ </p>
+                        <p><em>អ្នកផ្ទេរប្រាក់ត្រូវតែជាអតិថិជនដែលមានគណនីធនាគារ វីង ពេញលេញ (Full KYC) ។</em>
+                        </p>
+        
+                        <p></p>
+        
+                        <h6><strong>ទទួលតាមលេខទូរស័ព្ទ</strong></h6>
+                        <p>សម្រាប់ការផ្ទេរមកលេខទូរស័ព្ទអ្នកទទួល លោកអ្នកអាចជ្រើសរើសទទួលប្រាក់តាម 2 របៀបផ្សេងគ្នាដូចខាងក្រោម៖</p>
+                        <div class="background">
+                            <h6>1. ទទួលប្រាក់តាមអេប Wing Bank តាមមុខងារលេខកូដមកវីង ដោយប្រើលេខកូដយោង 8 ខ្ទង់:</h6>
+                            <p>អ្នកទទួល អាចទទួលប្រាក់ផ្ទេរបានកាន់តែងាយស្រួលចូលទៅក្នុងគណនីធនាគារ វីងរបស់ពួកគេ ដោយប្រើកូដយោង 8 ខ្ទង់ដែលទទួលបានពីអ្នកផ្ទេរ តាមមុខងារ កូដទៅវីង និងធ្វើតាមជំហានងាយៗដូចខាងក្រោម៖  </p>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img alt="" data-srcset="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/img.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/img.png" alt="" srcset=""></noscript>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>ចូលទៅកាន់អេប <a><strong>Wing Bank app</strong> </a></li>
+                                        <li>ចុចលើ <a><strong>"កូដទៅវីង"</strong></a></li>
+                                        <li>ចុច <a><strong>"វីង"</strong></a></li>
+                                        <li>បំពេញលេខកូដយោង 8 ខ្ទង់</li>
+                                        <li>បំពេញចំនួនទឹកប្រាក់</li>
+                                        <li>បំពេញព័ត៌មានផ្ទាល់ខ្លួន រួចចុច<a> <strong>"ផ្ញើ"</strong></a></li>
+                                        <li>បញ្ជាក់ចំនួនទឹកប្រាក់ រួចចុច <a><strong>"បញ្ជាក់"</strong> </a></li>
+                                        <li>បំពេញលេខកូដសម្ងាត់ <a><strong>"4 ខ្ទង់របស់គណនី"</strong></a> ដើម្បីបញ្ចប់ប្រតិបត្តិការ </li>
+                                    </ul>
+                                </div>
+                            </div>
+        
+                            <p><strong style="color: #A9CF38;">បញ្ជាក់៖ </strong> <em>អតិថិជនត្រូវតែជាអតិថិជនដែលមានគណនីធនាគារ វីងពេញលេញ។ ឈ្មោះ និងនាមត្រកូលរបស់អ្នកទទួលត្រូវតែដូចគ្នាជាមួយនឹងឈ្មោះគណនី។  </em></p>
+                        </div>
+                        <div class="background">
+                            <h6>2. ដកសាច់ប្រាក់ដោយផ្ទាល់ តាមសាខាធនាគារ វីង ឬទីតាំង វីង ដែលនៅជិត </h6>
+                            <p>អ្នកទទួលអាច ដកប្រាក់នៅតាម សាខាធនាគារ វីង ឬទីតាំង វីង គ្រប់ទីកន្លែង ដោយភ្ជាប់មកជាមួយនូវកសារបញ្ជាក់មួយចំនួនដួចខាងក្រោម៖</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>ភ្ជាប់ជាមួយនូវលេខទូរស័ព្ទ</li>
+                                        <li>លេខកូដយោង 8  ខ្ទង់ដែលទទួលបានពីអ្នកផ្ទេរ</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <img alt="" srcset="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/12/div.mar-xs-bm.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://www.wingbank.com.kh/wp-content/uploads/2023/12/div.mar-xs-bm.png" alt=""
+                                        srcset=""></noscript>
+                                </div>
+        
+                            </div>
+                            <p><strong style="color: #A9CF38;">ចំណាំ&ZeroWidthSpace;:</strong> <em>ឈ្មោះរបស់អ្នកទទួលគួរតែត្រូវគ្នានឹងព័ត៌មានដែលផ្តល់ដោយអ្នកផ្ញើ។</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- End tabview -->
+        
+        <div class="space-bottom "></div>
+        <!-- Fee កម្រៃសេវា -->
+        <h3><strong>លក្ខខណ្ឌ និងដែនកំណត់</strong></h3>
+        <p>ចំនួនទឹកប្រាក់ផ្ទេរ និងថ្លៃសេវា ពីថៃមកកម្ពុជារបស់&ZeroWidthSpace;2C2P</p>
+        <table>
+            <tbody>
+                </tbody><thead style="color: #0077FF;">
+                    <tr aria-rowindex="1">
+                        <td colspan="2">
+                            <p><b>ចំនួនទឹកប្រាក់ (ថៃបាត)</b></p>
+                        </td>
+                        <td colspan="1" rowspan="2">
+                            <p><b>ថ្លៃសេវា (ថៃបាត)</b></p>
+                        </td>
+                    </tr>
+                    <tr aria-rowindex="2">
+                        <td>
+                            <p><b>ចាប់ពី</b></p>
+                        </td>
+                        <td>
+                            <p><b>ដល់</b></p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody><tr aria-rowindex="3">
+                    <td>
+                        <p>500</p>
+                    </td>
+                    <td>
+                        <p>10,000</p>
+                    </td>
+                    <td>
+                        <p>99</p>
+                    </td>
+                </tr>
+                <tr aria-rowindex="4">
+                    <td>
+                        <p>10,001</p>
+                    </td>
+                    <td>
+                        <p>15,000</p>
+                    </td>
+                    <td>
+                        <p>120</p>
+                    </td>
+                </tr>
+                <tr aria-rowindex="5">
+                    <td>
+                        <p>15,001</p>
+                    </td>
+                    <td>
+                        <p>20,000</p>
+                    </td>
+                    <td>
+                        <p>150</p>
+                    </td>
+                </tr>
+                <tr aria-rowindex="6">
+                    <td>
+                        <p>20,001</p>
+                    </td>
+                    <td>
+                        <p>75,000</p>
+                    </td>
+                    <td>
+                        <p>180</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p></p>
+        <p>សម្រាប់ការដកសាច់ប្រាក់តាមវីង៖ បានរហូតដល់ 1,000 ដុល្លារ (ប្រមាណជា 35,000 ថៃបាត) ក្នុងមួយប្រតិបត្តិការ និង 3,000 ដុល្លារ  (ប្រមាណជា 100,000 ថៃបាត)  ក្នុងមួយថ្ងៃ។</p>
+        <p>សម្រាប់ទទួលប្រាក់តាមរយៈគណនីធនាគារ វីង៖ បានរហូតដល់ 2,500 ដុល្លារ (ប្រមាណជា 80,000 ថៃបាត) ក្នុងមួយប្រតិបត្តិការ និង 5,000 ដុល្លារ (ប្រមាណជា 170,000 ថៃបាត) ក្នុងមួយថ្ងៃ។</p>
+        
+        <div class="space-bottom "></div>
+        <!-- CTA Khmer-->
+        <div class="background-card" style="background-color: #a8cb374d;">
+            <h3><strong>តើ&ZeroWidthSpace;យើង&ZeroWidthSpace;អាច&ZeroWidthSpace;ជួយ&ZeroWidthSpace;អ្នក&ZeroWidthSpace;ដោយ&ZeroWidthSpace;របៀបណា&ZeroWidthSpace;?</strong></h3>
+            <div class="row">
+                <div class="col-sm-12 cta-img-m">
+                    <img alt="CTA" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/cta-img.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img  alt="CTA" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/cta-img.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/cta-img.png" alt="CTA"></noscript>
+                </div>
+                <div class="col-md-8">
+                    <br>
+                    <p>សម្រាប់ព័ត៌មានបន្ថែមអ្នកអាចទាក់ទងមកកាន់ក្រុមការងារយើងតាម</p>
+                    <div style="padding-top: 12px;">
+                        <div class="row">
+                            <!-- class="btn-cta"  -->
+                            <div class="col-md-6 btn-cta">
+                                <a href="https://wingmoney.onelink.me/oCM5/wingchatweb"><i class="fa-regular fa-comment-dots"></i> វីងឆាត</a>
+                            </div>
+                            <div class="col-md-6 btn-cta">
+                                <a href="https://www.facebook.com/WingBankKH" target="_blank"><i class="fa-brands fa-facebook-messenger"></i> ហ្វេសប៊ុកផេក</a>
+                            </div>
+                            <div class="col-md-6 btn-cta">
+                                <a href="tel:+85523999989"><i class="fa-solid fa-headset"></i> 023 999 989</a>
+                            </div>
+                            <div class="col-md-6 btn-cta">
+                                <a href="https://wa.me/+85523999989" target="_blank"><i class="fa-brands fa-whatsapp"></i> 078
+                                    999 489</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 cta-img-d">
+                    <img alt="CTA" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/cta-img.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img  alt="CTA" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/cta-img.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/cta-img.png" alt="CTA"></noscript>
+                </div>
+            </div>
+        </div>
+        <!-- End CTA Khmer-->
+        
+        <!-- Script of tabview -->
+        <script>
+            function openCity(card) {
+                var i;
+                var x = document.getElementsByClassName("card");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                console.log(document.getElementById(card));
+                document.getElementById(card).style.display = "block";
+            }
+        </script>
+        <!-- End Script of tabview --></div></div></div></div><div class="space-bottom "></div></section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="../assets/libri/MDB5-STANDARD-UI-KIT-Free-8.1.0/js/mdb.umd.min.js"></script>
+</body>
+</html>

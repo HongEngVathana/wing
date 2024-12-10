@@ -1,0 +1,162 @@
+
+body {
+    font-family: 'nokora-regular', sans-serif !important;
+    letter-spacing: -.5px !important;
+}
+.inner-banner-text h1 {
+    font-size: 48px !important;
+    color: var(--main) !important;
+    font-weight: 700;
+}
+.section1,
+.section2,
+.section3,
+.section4,
+.section5,
+.section6 {
+    margin-bottom: 40px;
+}
+.color-main {
+    color: var(--main);
+}
+#international-account .color-blue {
+    color: var(--blue);
+    font-weight: bold;
+}
+#international-account p {
+    padding-top: 0;
+}
+#international-account .mb-20 {
+    margin-bottom: 20px;
+}
+#international-account .mb-30 {
+    margin-bottom: 30px;
+}
+#international-account .mt-20 {
+    margin-top: 20px;
+}
+#international-account .pt-30 {
+    padding-top: 30px;
+}
+#international-account .bg-gray {
+    background: var(--gray-light);
+    height: 320px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#international-account .bg-green {
+    background: #A8CB374D;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#international-account h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--main);
+    margin-top: 0;
+    margin-bottom: 30px;
+    line-height: 40px;
+}
+#international-account h3 {
+    font-size: 25px;
+    color: var(--main);
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#international-account h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--blue);
+    padding-top: 0;
+}
+/* Default style end */
+#international-account .btn-cta img {
+    height: 20px;
+}
+
+#international-account .btn-cta {
+    background: #0077FF;
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+    display: block;
+    color: #fff;
+    border-radius: 10px;
+}
+#international-account .background-card {
+    border-radius: 10px;
+    background-color: #F6FAEB;
+    padding: 16px;
+}
+#international-account .flex-center-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#international-account .flex-center-item img {
+    margin-right: 15px;
+}
+#international-account .flex-center-item p {
+    padding: 0;
+    margin: 0;
+}
+
+/* banner desktop custom */
+.sec-pad a {
+    color: #ffffff;
+}
+.banner-inner {
+    background: #fff !important;
+}
+.inner-banner-text h1 {
+    font-weight: 600;
+    font-size: 38px !important;
+    color: #A9CB37;
+}
+.inner-banner-text p {
+    color: #898989;
+}
+
+@media only screen and (max-width: 600px) {
+    .lp-container {
+        width: 100%;
+    }
+    .section1,
+    .section2,
+    .section3,
+    .section4,
+    .section5,
+    .section6 {
+        margin-bottom: 20px;
+    }
+    #international-account table {
+        margin: auto;
+        width: 100%;
+    }
+    #international-account .pt-30 {
+        padding-top: 0;
+    }
+    #international-account .bg-gray {
+        height: 500px;
+    }
+
+    /* banner mobile custom code*/
+    .banner-inner {
+        max-height: 650px !important;
+        height: 650px !important;
+        padding-bottom: 0;
+    }
+    .banner-inner .coverimage {
+        top: 0;
+    }
+    .inner-banner-text.text-left {
+        margin-top: 60px;
+text-align:center;
+    }
+    .table-wrap {
+        display: block;
+    }
+    /* End banner moibile custom code */
+}
