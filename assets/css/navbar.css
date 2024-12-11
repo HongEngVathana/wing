@@ -7,3 +7,29 @@
 .card-color {
   background-color: #dee2e6;
 }
+.backgroun-nav {
+  background-color: #f8f9fa;
+}
+
+.card-color {
+  background-color: #e8f5e9;
+}
+
+.contact_navbar {
+  font-weight: bold;
+}
+.footer {
+  background-color: #a9cf38;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-links a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
