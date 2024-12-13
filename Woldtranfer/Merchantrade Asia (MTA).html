@@ -1,24 +1,424 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="../assets/css/QR.css">
-  <link rel="stylesheet" href="../assets/libri/MDB5-STANDARD-UI-KIT-Free-8.1.0/css/mdb.min.css">
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-  <!-- Google Fonts -->
+    <title>Wing </title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+<link rel="stylesheet" href="./assets/css/navbar.css">
+  
+<link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+    rel="stylesheet"
+  />
+
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-</head>
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/quill/quill.snow.css" rel="stylesheet" />
 
-<body>
+    <link href="../assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="../assets/vendor/simple-datatables/style.css" rel="stylesheet" />
 
-    <section id="section-0" class="sec-pad is-animated" style="opacity: 1;"><div class="layout-1 "><div class="container "><div class="row"><div class="col-sm-12 text-left"><!-- Style  -->
+  
+    <link href="../assets/css/style.css" rel="stylesheet" />
+  
+
+  
+  </head>
+
+  <body>
+    <!-- Start header -->
+ 
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="./assets/img/wb-logo-foot.png" alt="" />
+          <span class="d-none d-lg-block">Wing App</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+      </div>
+
+      <div class="search-bar">
+        <form
+          class="search-form d-flex align-items-center"
+          method="POST"
+          action="#"
+        >
+          <input
+            type="text"
+            name="query"
+            placeholder="Search"
+            title="Enter search keyword"
+          />
+          <button type="submit" title="Search">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+      
+
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+         
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <i class="fa-solid fa-2"></i>
+              <span> E6</span>
+              </a
+            >
+            
+          </li>
+
+      </nav>
+      
+    </header>
+    <!-- Endheader -->
+
+    
+    <!-- Start aside -->
+    
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">
+            <i class="bi bi-grid"></i>
+            <span>Wing Bank App Overiview</span>
+          </a>
+        </li>
+       
+      <li class="nav-item">
+          <a class="nav-link collapsed" href="../index.html">
+            <i class="fa-solid fa-qrcode"></i>
+            <span>KH QR</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#components-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="fa-solid fa-circle-user"></i><span>Open Your Wing Account</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="components-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>International Account Opening</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+  
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#forms-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+          <i class="fa-solid fa-money-bill-transfer"></i><span>Local Transfer</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="forms-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>Wing to Other Bank</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>Wing to Wing Transfers</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>Wing Wei Luy</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>Transfer via NCS</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>Trading Account</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>Trasfer to Own Account</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link collapsed" href="#">
+           <i class="fa-solid fa-phone"></i>
+            <span>Phone To Up</span>
+          </a>
+        </li>
+     
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="fa-solid fa-globe"></i><span>World</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>UnionPay</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>Money Gram</span>
+              </a>
+            </li>
+             <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>Merchantrade Asia(MTA)</span>
+              </a>
+            </li>
+             <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>Fin Fan Money Transfer</span>
+              </a>
+            </li>
+             <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>Weixin Money Transfer</span>
+              </a>
+            </li>
+             <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>Hanpass Money Transfers</span>
+              </a>
+            </li>
+
+             <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>SBI Cosmoney Money</span>
+              </a>
+            </li>
+             <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>SmartSwift Transfers</span>
+              </a>
+            </li>
+             <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>SentBe Money Transfers</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>JRF Money Transfers</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>Sacombank-SBB Transfer</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>Kasikorbank Money Transfer</span>
+              </a>
+            </li>
+             <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>Western Uion</span>
+              </a>
+            </li>
+             <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>2C2P</span>
+              </a>
+            </li>
+             <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>DeeMoney</span>
+              </a>
+            </li>
+              <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>Terrpay</span>
+              </a>
+            </li>
+           
+
+
+          </ul>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link collapsed" href="#">
+            <i class="fa-solid fa-code"></i>
+            <span>Code to Wing</span>
+          </a>
+        </li>
+
+        
+     
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#charts-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="fa-solid fa-id-card"></i><span>Card</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="charts-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>Debit Cards</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>Credit Cards</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>Public Card</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link collapsed" href="#">
+            <i class="fa-solid fa-money-bill"></i>
+            <span>Cash In</span>
+          </a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link collapsed" href="#">
+           <i class="fa-solid fa-money-bill-1"></i>
+            <span>Loans</span>
+          </a>
+        </li>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link collapsed" href="#">
+           <i class="fa-solid fa-money-bill-wave"></i>
+            <span>Bill Payment</span>
+          </a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link collapsed" href="#">
+            <i class="fa-solid fa-hand-point-up"></i>
+            <span>Wingpoints</span>
+          </a>
+        </li>
+     
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#icons-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+           <i class="fa-solid fa-cash-register"></i><span>Cash Out</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="icons-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>Free Cash Out</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>Cash Out</span>
+              </a>
+            </li>
+           
+          </ul>
+        </li>
+      </ul>
+      </aside>
+          
+    <!-- end aside -->
+      
+      
+      <main id="main" class="main">
+
+    <!-- <div class="pagetitle">
+      <h1></h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item">Components</li>
+          <li class="breadcrumb-item active">Alerts</li>
+        </ol>
+      </nav>
+    </div> -->
+    <!-- ================================================================================================================================================ -->
+
+    <!-- Main Section -->
+   
+ <section id="section-0" class="sec-pad is-animated" style="opacity: 1;"><div class="layout-1 "><div class="container "><div class="row"><div class="col-sm-12 text-left"><!-- Style  -->
         <style>
             .background-card {
                 border-radius: 10px;
@@ -26,136 +426,191 @@
                 padding: 16px;
             }
         
-            .btn-cta {
-                display: flex;
-                padding: 0.5rem 1rem 0.5rem 1rem;
-                align-items: flex-start;
-                gap: 0.5rem;
-                border-radius: 0.625rem;
-                background: #CCE4FF;
-                color: #0077ff;
-            }
-        
-            .btn-list {
-                display: flex;
-                justify-content: space-between;
-            }
-        
-            .cta-img-m {
-                display: none;
-            }
-        
-            .cta-img-d {
-                display: block;
-            }
-        
             .how-to-text li {
                 margin-bottom: 22px !important;
             }
         
-            .table-header {
-                background-color: #0077ff !important;
-                color: #fff;
-            }
-        
-            /* .sec-pad .layout-1:first-child {
-                padding-bottom: 0 !important;
-            } */
-        
-            @media screen and (max-width: 480px) {
-                table {
-                    margin: 0px !important;
-                    width: 100% !important;
-                }
-        
-                .btn-list {
-                    display: block;
-                    justify-content: space-between;
-                }
-        
-                .cta-img-m {
-                    display: block;
-                    text-align: center;
-                    margin-top: 24px;
-                }
-        
-                .cta-img-d {
-                    display: none;
-                }
+            .background-card-white {
+                border-radius: 10px;
+                padding: 16px;
+                background-color: #fff;
+                margin-left: 16px;
+                margin-right: 16px;
+                margin-bottom: 8px;
             }
         </style>
         <!-- end style  -->
         
         <!-- intro  -->
         <div class="background-card">
-            <p>ធនាគារវីងផ្ដល់ជូននូវដំណោះស្រាយហិរញ្ញវត្ថុដ៏ល្អបំផុតសម្រាប់អតិថិជនគ្រប់រូបក្នុងការផ្ញើ និងទទួលប្រាក់ទូទាំងពិភពលោក។
-                យើងបន្តពង្រីកសេវាកម្មរបស់យើងជាមួយនឹងការធ្វើការសហការណ៍នឹងដៃគូផ្ទេរប្រាក់អន្តរជាតិថ្មីមួយដែលមានឈ្មោះថា
-                Merchantrade Asia (MTA) ។ ទទួលបានបទពិសោធន៍ថ្មីជាមួយ Merchantrade Asia (MTA) ឥឡូវនេះ!</p>
-            <p>អ្នកអាចជ្រើសរើស Merchantrade Asia (MTA) នៅលើ Wing Bank App ឬទៅតាមវីងណាមួយដែលនៅជិតផ្ទះរបស់លោកអ្នក
-                សម្រាប់ការផ្ញើប្រាក់ទៅកាន់42ប្រទេស ទូទាំងពិភពលោក រួមមាន៖</p>
-            <p><strong>អាស៊ី៖ </strong>ចិន វៀតណាម ហ្វីលីពីន ឥណ្ឌា ថៃ ម៉ាឡេស៊ី ឥណ្ឌូនេស៊ី ជប៉ុន សិង្ហបុរី កូរ៉េខាងត្បូង
-                    និងនេប៉ាល់</p>
-            <p><strong>សហភាពអឺរ៉ុប និងចក្រភពអង់គ្លេស៖</strong>អូទ្រីស បែលហ្ស៊ិក ប៊ុលហ្គារី ក្រូអាត ស៊ីប សាធារណរដ្ឋឆេក ដាណឺម៉ាក
-                អេស្តូនី ហ្វាំងឡង់ បារាំង អាល្លឺម៉ង់ ក្រិក ហុងគ្រី អ៊ីស្លង់ អៀរឡង់ អ៊ីតាលី ឡាតវី លីចតេនស្ទីន លីទុយអានី លុចសំបួរ
-                ម៉ាល់តា ម៉ូណាកូ&ZeroWidthSpace; ហូឡង់ ន័រវែស ប៉ូឡូញ ព័រទុយហ្គាល់ រូម៉ានី សាន់ម៉ារីណូ ស្លូវ៉ាគី ស្លូវេនី អេស្ប៉ាញ ស៊ុយអែត ស្វីស
-                និងចក្រភពអង់គ្លេស (ស្កុតឡែន អៀរឡង់ខាងជើង អង់គ្លេស វែល)</p>
-            <p><strong>អូសេអានី៖ </strong>អូស្ត្រាលី</p>
-            <img style="border-radius: 8px; opacity: 1;" alt="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/01/MTA-page-banner-ENG.jpg" class=" ls-is-cached lazyloaded" src="https://www.wingbank.com.kh/wp-content/uploads/2023/01/MTA-page-banner-ENG.jpg"><noscript><img style="border-radius: 8px;" src="https://www.wingbank.com.kh/wp-content/uploads/2023/01/MTA-page-banner-ENG.jpg" alt=""></noscript>
+            <p>ធនាគារ វីង កំពុងពង្រីកសេវាផ្ទេរប្រាក់អន្តរជាតិជាមួយ MoneyGram
+                ដោយអនុញ្ញាតឱ្យអតិថិជនទាំងអស់ផ្ទេរនិងទទួលប្រាក់ពីប្រទេសកម្ពុជាតាមរយៈអេប Wing Bank ឬនៅ វីងគ្រប់ទីតាំង
+                ទៅកាន់គ្រួសារ ឬដៃគូអាជីវកម្មទូទាំងពិភពលោកដោយរហ័ស សុវត្ថិភាព និងងាយស្រួល។</p>
+            <img alt="banner" style="border-radius: 5px;" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/banner-3.png" class=" lazyloaded" src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/banner-3.png"><noscript><img src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/banner-3.png" alt="banner"
+                style="border-radius: 5px;"></noscript>
         </div>
-        <!-- end intro  -->
+        <!-- end intro     -->
         <div class="space-bottom "></div>
         <!-- Benefit -->
-        <h3><strong>ប្រយោជន៍</strong></h3>
-        <ul>
-            <li>ថ្លៃប្រតិបត្តិការថោកជាង៖ បើប្រៀបធៀបទៅនឹងធនាគារពាណិជ្ជកាត់បន្ថយថ្លៃសេវារហូតដល់ 90%</li>
-            <li>ភាពជាដៃគូសកល៖ ទំនាក់ទំនងបណ្តាញហិរញ្ញវត្ថុសកលដែលអាចជឿទុកចិត្តបាន។</li>
-            <li>ការផ្ទេរប្រាក់ 24/7៖ ផ្តល់សេវាកម្មលឿនបំផុត និងងាយស្រួលបំផុតជាមួយនឹងដំណើរការផ្ទេរប្រាក់ដ៏ស្មុគស្មាញដ៏សាមញ្ញ</li>
-        </ul>
+        <div>
+            <h3><strong>អត្ថប្រយោជន៍</strong></h3>
+            <ul>
+                <li>អាចផ្ទេរ និងទទួលប្រាក់ពីជាង 200 ប្រទេស និងតំបន់ជុំវិញពិភពលោកជាមួយ MoneyGram នៅប្រមាណជាង 400,&ZeroWidthSpace;000 ទីតាំង</li>
+                <li>អាចផ្ទេរ និងទទួលប្រាក់នៅលើអេប Wing Bank សាខាធនាគារ វីង និងនៅវីងណាមួយដែលមានស្លាកសញ្ញា MoneyGram បានដោយរហ័ស
+                    សុវត្ថិភាព និងងាយស្រួល</li>
+                <li>អ្នកផ្ទេរ អាចជ្រើសរើសផ្ទេរជាមួយនឹងប្រភេទសេវាកម្មដូចជា ការដកសាច់ប្រាក់ ការផ្ទេរប្រាក់ចូលគណនីធនាគារ
+                    និងការផ្ទេរប្រាក់ដល់ផ្ទះ</li>
+                <li>អ្នកទទួលអាចជ្រើសរើសការទទួលប្រាក់ភ្លាមៗទៅកាន់គណនីធនាគារវីង មុខងារលេខកូដទៅវីង&ZeroWidthSpace; នៅលើអេប Wing Bank
+                    និងដកប្រាក់នៅវីងដែលមានរូបសញ្ញា MoneyGram នៅជាង 5,000 ទីតាំង</li>
+                <li>ទទួលបានប្រាក់ភ្លាមៗក្រោយពីធ្វើប្រតិបត្តិការរួចរាល់</li>
+                <li>មិនមានគិតថ្លៃសេវាបន្ថែមសម្រាប់អ្នកទទួល។</li>
+            </ul>
+        </div>
         <!-- end Benefit -->
         <div class="space-bottom "></div>
-        <!-- How to .. -->
-        <div class="background-card">
-            <h3><strong>របៀបផ្ទេរប្រាក់តាមរយៈអេប Wing Bank</strong></h3>
-            <p>អ្នកអាចផ្ញើប្រាក់ទៅក្រៅប្រទេស តាមរយៈ Merchantrade Asia (MTA) នៅលើ អេប&ZeroWidthSpace; Wing Bank ឬតាមសាខា វីង ណាមួយដែលនៅជិតលោកអ្នក ជាមួយនឹងប្រតិបត្តិការដែលមានទឹកប្រាក់ដូចខាងក្រោម៖</p>
+        <!-- how to -->
+        <!-- send  -->
+        <div class="background-card ">
+            <h3><strong>របៀបផ្ទេរប្រាក់</strong></h3>
             <div class="row">
-                <div class="col-md-4">
-                    <img alt="international Money Transfers phone" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/img.png" class=" ls-is-cached lazyloaded" src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/img.png"><noscript><img src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/img.png"
-                        alt="international Money Transfers phone"></noscript>
+                <div class="background-card-white">
+                    <h5><strong>តាមអេប Wing Bank</strong></h5>
+                    <p>ដើម្បីផ្ទេរ ប្រាក់ទៅក្រៅប្រទេសតាមរយៈ MoneyGram នៅលើអេប Wing Bank សូមអនុវត្តតាមជំហានខាងក្រោម</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img alt="international Money Transfers phone" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/img.png" class=" ls-is-cached lazyloaded" src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/img.png" style="opacity: 1;"><noscript><img src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/img.png"
+                                alt="international Money Transfers phone"></noscript>
+                        </div>
+                        <div class="col-md-8">
+                            <ol class="how-to-text">
+                                <li>ចូលទៅ <strong><a>អេប Wing Bank</a></strong></li>
+                                <li>ជ្រើសរើស <strong><a>"ផ្ទេរប្រាក់ទៅក្រៅប្រទេស"</a></strong> នៅលើអេក្រង់ដើម</li>
+                                <li>ជ្រើសរើស&ZeroWidthSpace; <strong><a>ប្រទេស</a></strong> ឧ.ទ "អូស្ត្រាលី" និង ជ្រើសរើសដៃគូ
+                                    <strong><a>"MoneyGram"</a></strong>
+                                </li>
+                                <li>បំពេញព័ត៌មានដែលចាំបាច់ទាំងអស់ រួចចុច "ផ្ញើ"</li>
+                                <li>ផ្ទៀងផ្ទាត់ព័ត៌មានអ្នកទទួល និងចំនួនទឹកប្រាក់ រួចចុច <strong><a>“បញ្ជាក់”</a></strong></li>
+                                <li>បញ្ចូលលេខកូដ <strong><a>PIN 4 ខ្ទង់</a></strong>របស់គណនីលោកអ្នក ដើម្បីបញ្ចប់ប្រតិបត្តិការ
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-8">
-                    <ol class="how-to-text">
-                        <li>ចូលទៅ <strong><a>អេប Wing Bank</a></strong></li>
-                        <li>ជ្រើសរើស <strong><a>"ផ្ទេរប្រាក់ទៅក្រៅប្រទេស"</a></strong> នៅលើអេក្រង់ដើម</li>
-                        <li>ជ្រើសរើស&ZeroWidthSpace; <strong><a>ប្រទេស</a></strong> និង ជ្រើសរើសដៃគូ
-                            <strong><a>"Merchantrade Asia (MTA)"</a></strong>
-                        </li>
-                        <li>បំពេញព័ត៌មានដែលចាំបាច់ទាំងអស់ រួចចុច "ផ្ញើ"</li>
-                        <li>ផ្ទៀងផ្ទាត់ព័ត៌មានអ្នកទទួល និងចំនួនទឹកប្រាក់ រួចចុច <strong><a>“បញ្ជាក់”</a></strong></li>
-                        <li>បញ្ចូលលេខកូដ <strong><a>PIN 4 ខ្ទង់</a></strong>របស់គណនីលោកអ្នក ដើម្បីបញ្ចប់ប្រតិបត្តិការ
-                        </li>
-                    </ol>
+                <div class="background-card">
+                    <h5><strong>តាមភ្នាក់ងារវីង</strong></h5>
+                    <p>ដើម្បីផ្ទេរ ប្រាក់ទៅក្រៅប្រទេសតាមរយៈ MoneyGram នៅភ្នាក់ងារវីង សូមអនុវត្តតាមជំហានខាងក្រោម៖</p>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <ol>
+                                <li>សូមចូលទៅកាន់ភ្នាក់ងារវីងដែលនៅជិតៗដែលមាននិមិត្តសញ្ញា MoneyGram</li>
+                                <li>ភ្ជាប់មកជាមួយគណនីវីងរបស់អ្នក។ អតិថិជនត្រូវតែមានគណនីធនាគារវីងស្តង់ដារ ដើម្បីអាចផ្ទេរប្រាក់បាន
+                                </li>
+                                <li>បំពេញព័ត៌មានចាំបាច់ទាំងអស់តាមបែបបទផ្ទេរប្រាក់ដែលផ្តល់ដោយភ្នាក់ងារវីង</li>
+                                <li>បញ្ជាក់ និងបញ្ចូលលេខសម្ងាត់របស់អ្នកនៅលើម៉ាស៊ីន POS ដែលផ្តល់ដោយភ្នាក់ងារវីង
+                                    ដើម្បីបញ្ចប់ប្រតិបត្តិការ</li>
+                                <li>ភ្នាក់ងារវីងនឹងផ្តល់ឱ្យអ្នកនូវបង្កាន់ដៃនៃប្រតិបត្តិការដែលមានលេខកូដយោងសម្រាប់អ្នកទទួលអាចទៅដកប្រាក់បាន។
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="col-md-4">
+                            <img alt="international Money Transfers phone" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/agent_iphone_icon-path.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/agent_iphone_icon-path.png"
+                                alt="international Money Transfers phone"></noscript>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- End How to .. -->
-        
+        <!-- end send -->
         <div class="space-bottom "></div>
-        <!-- term & Limitation -->
-        <div class="background-card">
-            <h4><strong>លក្ខខណ្ឌ និងដែនកំណត់</strong></h4>
-            <p>អ្នកអាចផ្ញើប្រាក់ទៅក្រៅប្រទេស តាមរយៈ Merchantrade Asia (MTA) នៅលើ អេប&ZeroWidthSpace; Wing Bank ឬតាមសាខា វីង
-                ណាមួយដែលនៅជិតលោកអ្នក ជាមួយនឹងប្រតិបត្តិការដែលមានទឹកប្រាក់ដូចខាងក្រោម៖</p>
-            <ul>
-                <li>ដកសាច់ប្រាក់នៅធនាគារដៃគូ៖ 1,000USD ក្នុងមួយប្រតិបត្តិការ និង 5,000USD ក្នុងមួយថ្ងៃ</li>
-                <li>ទទួលប្រាក់ដោយផ្ទាល់ចូលក្នុងគណនីរបស់អ្នកទទួល៖ 2,500USD ក្នុងមួយប្រតិបត្តិការ និង 5,000USD ក្នុងមួយថ្ងៃ</li>
-            </ul>
-            <p>ថ្លៃសេវាកម្មអាចប្រែប្រួលទៅតាមប្រទេសគោលដៅនីមួយៗ។</p>
+        <!-- Receive  -->
+        <div class="container ">
+            <!-- How to receive money -->
+            <h3><strong>របៀបទទួលប្រាក់ផ្ទេរ </strong></h3>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/div.mar-xs-bm-1.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/div.mar-xs-bm-1.png"></noscript>
+                    <ul>
+                        <h5><strong>តាមអេប</strong></h5>
+                        <p>អ្នកទទួលនៅក្នុងប្រទេសកម្ពុជាអាចទទួលបានប្រាក់យ៉ាងងាយស្រួលចូលទៅក្នុងគណនី ធនាគារវីង ឬដោយប្រើលេខកូដ 8 ខ្ទង់នៅលើមុខងារ លេខកូដមកវីង ។ <a href="https://www.wingbank.com.kh/en/wing-bank-app/code2wing/"> ចុចទីនេះ</a>
+                            ដើម្បីមើលព័ត៌មានលម្អិតអំពីរបៀបប្រើប្រាស់មុខងារ លេខកូដមកវីង របស់ MoneyGram</p>
+                        <ul>
+                            <li>
+                                <p>អ្នកទទួលមិនតម្រូវឲ្យធ្វើប្រតិបត្តិការបន្ថែមអ្វីទាំងអស់—ប្រាក់នឹងត្រូវវេរចូលគណនីធនាគារ
+                                    វីងភ្លាមៗ។
+                                </p>
+                            </li>
+                        </ul>
+                        <p><em><strong style="color: #A9CF38;">ចំណាំ៖ </strong> អតិថិជនត្រូវតែមានគណនីធនាគារ វីង ពេញលេញ</em>.
+                        </p>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <img data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/div.mar-xs-bm.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/div.mar-xs-bm.png"></noscript>
+                    <ul>
+                        <h5><strong>សម្រាប់ការដកសាច់ប្រាក់តាមវីង</strong></h5>
+                        <p>ភ្ជាប់ជាមួយព័ត៌មានចាំបាច់ដូចខាងក្រោម៖</p>
+                        <ul>
+                            <li>អត្តសញ្ញាណប័ណ្ណ/លិខិតឆ្លងដែន/ប័ណ្ណបើកបរ</li>
+                            <li>ឈ្មោះរបស់អ្នកទទួល (គួរតែត្រូវគ្នាជាមួយព័ត៌មានបញ្ចូលរបស់អ្នកផ្ញើ)</li>
+                            <li>លេខកូដយោង (លេខកូដ ៨ ខ្ទង់)</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <!-- end term & Limitation --></div></div></div></div><div class="space-bottom "></div></section>
+        <!-- end Receive  -->
+        
+        <!-- end How to      --></div></div></div></div><div class="space-bottom "></div></section>  
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="../assets/libri/MDB5-STANDARD-UI-KIT-Free-8.1.0/js/mdb.umd.min.js"></script>
-</body>
+        <!-- ========================================================================================================================================== -->
+  </main> 
+   <!-- Start Footer -->
+  <footer id="footer" class="footer text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h5>Follow Us</h5>
+          <div class="footer-links mb-3">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+          </div>
+          <p>&copy; 2024 Team 2 E6 26 <strong>RUPP</strong></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <!-- End Footer -->
+     
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+
+    <script src="../assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="../assets/vendor/echarts/echarts.min.js"></script>
+    <script src="../assets/vendor/quill/quill.js"></script>
+    <script src="../assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="../assets/vendor/tinymce/tinymce.min.js"></script>
+      <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+  ></script>
+  <!-- Animate.css -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    
+
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+  </body>
 </html>
