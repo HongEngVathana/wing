@@ -1,561 +1,344 @@
-<!DOCTYPE html>
-<html lang="en"> 
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Wing </title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
-<link rel="stylesheet" href="./assets/css/navbar.css">
-  
-<link
-    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
-    rel="stylesheet"
-  />
-
-    <link href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link
-      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-  
-    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link href="../assets/vendor/quill/quill.snow.css" rel="stylesheet" />
-
-    <link href="../assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
-    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
-    <link href="../assets/vendor/simple-datatables/style.css" rel="stylesheet" />
-
-  
-    <link href="../assets/css/style.css" rel="stylesheet" />
-  
-
-  
-  </head>
-
-  <body>
-    <!-- Start header -->
- 
-    <header id="header" class="header fixed-top d-flex align-items-center">
-      <div class="d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
-          <img src="./assets/img/wb-logo-foot.png" alt="" />
-          <span class="d-none d-lg-block">Wing App</span>
-        </a>
-        <i class="bi bi-list toggle-sidebar-btn"></i>
-      </div>
-
-      <div class="search-bar">
-        <form
-          class="search-form d-flex align-items-center"
-          method="POST"
-          action="#"
-        >
-          <input
-            type="text"
-            name="query"
-            placeholder="Search"
-            title="Enter search keyword"
-          />
-          <button type="submit" title="Search">
-            <i class="bi bi-search"></i>
-          </button>
-        </form>
-      </div>
-      
-
-      <nav class="header-nav ms-auto">
-        <ul class="d-flex align-items-center">
-          <li class="nav-item d-block d-lg-none">
-            <a class="nav-link nav-icon search-bar-toggle" href="#">
-              <i class="bi bi-search"></i>
-            </a>
-          </li>
-         
-
-          <li class="nav-item dropdown">
-            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-              <i class="fa-solid fa-2"></i>
-              <span> E6</span>
-              </a
-            >
-            
-          </li>
-
-      </nav>
-      
-    </header>
-    <!-- Endheader -->
-
-    
-    <!-- Start aside -->
-    
-    <aside id="sidebar" class="sidebar">
-      <ul class="sidebar-nav" id="sidebar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="../index.html">
-            <i class="bi bi-grid"></i>
-            <span>Wing Bank App Overiview</span>
-          </a>
-        </li>
-       
-      <li class="nav-item">
-          <a class="nav-link collapsed" href="../index.html">
-            <i class="fa-solid fa-qrcode"></i>
-            <span>KH QR</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            data-bs-target="#components-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-            <i class="fa-solid fa-circle-user"></i><span>Open Your Wing Account</span
-            ><i class="bi bi-chevron-down ms-auto"></i>
-          </a>
-          <ul
-            id="components-nav"
-            class="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
-            <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>International Account Opening</span>
-              </a>
-            </li>
-          </ul>
-        </li>
-  
-
-        <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            data-bs-target="#forms-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-          <i class="fa-solid fa-money-bill-transfer"></i><span>Local Transfer</span
-            ><i class="bi bi-chevron-down ms-auto"></i>
-          </a>
-          <ul
-            id="forms-nav"
-            class="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
-            <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>Wing to Other Bank</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>Wing to Wing Transfers</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>Wing Wei Luy</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>Transfer via NCS</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>Trading Account</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>Trasfer to Own Account</span>
-              </a>
-            </li>
-          </ul>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link collapsed" href="#">
-           <i class="fa-solid fa-phone"></i>
-            <span>Phone To Up</span>
-          </a>
-        </li>
-     
-
-        <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            data-bs-target="#tables-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-            <i class="fa-solid fa-globe"></i><span>World</span
-            ><i class="bi bi-chevron-down ms-auto"></i>
-          </a>
-          <ul
-            id="tables-nav"
-            class="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
-            <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>UnionPay</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>Money Gram</span>
-              </a>
-            </li>
-             <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>Merchantrade Asia(MTA)</span>
-              </a>
-            </li>
-             <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>Fin Fan Money Transfer</span>
-              </a>
-            </li>
-             <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>Weixin Money Transfer</span>
-              </a>
-            </li>
-             <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>Hanpass Money Transfers</span>
-              </a>
-            </li>
-
-             <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>SBI Cosmoney Money</span>
-              </a>
-            </li>
-             <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>SmartSwift Transfers</span>
-              </a>
-            </li>
-             <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>SentBe Money Transfers</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>JRF Money Transfers</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>Sacombank-SBB Transfer</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>Kasikorbank Money Transfer</span>
-              </a>
-            </li>
-             <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>Western Uion</span>
-              </a>
-            </li>
-             <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>2C2P</span>
-              </a>
-            </li>
-             <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>DeeMoney</span>
-              </a>
-            </li>
-              <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>Terrpay</span>
-              </a>
-            </li>
-           
-
-
-          </ul>
-        </li>
-          <li class="nav-item">
-          <a class="nav-link collapsed" href="#">
-            <i class="fa-solid fa-code"></i>
-            <span>Code to Wing</span>
-          </a>
-        </li>
-
+    <section id="section-0" class="sec-pad is-animated" style="opacity: 1;"><div class="layout-1 "><div class="container "><div class="row"><div class="col-sm-12 text-left"><!-- Noted : this landing page style css will set globale next wingank website V2 (2024) -->
+        <!-- style  -->
+        <style>
+            .background-card {
+                border-radius: 10px;
+                background-color: #f5f6f8;
+                padding: 16px;
+            }
         
-     
-
-        <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            data-bs-target="#charts-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-            <i class="fa-solid fa-id-card"></i><span>Card</span
-            ><i class="bi bi-chevron-down ms-auto"></i>
-          </a>
-          <ul
-            id="charts-nav"
-            class="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
-            <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>Debit Cards</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>Credit Cards</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>Public Card</span>
-              </a>
-            </li>
-          </ul>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link collapsed" href="#">
-            <i class="fa-solid fa-money-bill"></i>
-            <span>Cash In</span>
-          </a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link collapsed" href="#">
-           <i class="fa-solid fa-money-bill-1"></i>
-            <span>Loans</span>
-          </a>
-        </li>
-         </li>
-         <li class="nav-item">
-          <a class="nav-link collapsed" href="#">
-           <i class="fa-solid fa-money-bill-wave"></i>
-            <span>Bill Payment</span>
-          </a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link collapsed" href="#">
-            <i class="fa-solid fa-hand-point-up"></i>
-            <span>Wingpoints</span>
-          </a>
-        </li>
-     
-
-        <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            data-bs-target="#icons-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-           <i class="fa-solid fa-cash-register"></i><span>Cash Out</span
-            ><i class="bi bi-chevron-down ms-auto"></i>
-          </a>
-          <ul
-            id="icons-nav"
-            class="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
-            <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>Free Cash Out</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>Cash Out</span>
-              </a>
-            </li>
-           
-          </ul>
-        </li>
-      </ul>
-      </aside>
-          
-    <!-- end aside -->
-      
-      
-      <main id="main" class="main">
-
-    <!-- <div class="pagetitle">
-      <h1></h1>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item">Components</li>
-          <li class="breadcrumb-item active">Alerts</li>
-        </ol>
-      </nav>
-    </div> -->
-    <!-- ================================================================================================================================================ -->
-
-    <!-- Main Section -->
-    <div class="container-fluid backgroun-nav py-4">
-      <div class="container">
-
-      </div>
-    </div>
-
-    <!-- Card Section -->
-    <div class="container pt-5">
-      <div
-        class="card mb-3 card-color animate__animated animate__zoomIn"
-        style="max-width: 1500px"
-      >
-        <div class="row g-0">
-          <div class="col-md-4 d-flex justify-content-center">
-            <img
-              class="img-fluid"
-              src="../assets/img/App2.png"
-              width="300"
-              alt="Everyday Essentials"/>
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <p class="card-text">Everyday essentials</p>
-              <h1 class="contact_navbar card-title">
-                Send, spend and save smarter
-              </h1>
-              <p class="card-text">
-                Make day-to-day spending a breeze with all things money in one
-                place
-              </p>
+            .col-xs-6 .background-card {
+                margin-bottom: 24px;
+                height: auto;
+            }
+        
+            .col-md-4 .background-card {
+                margin-bottom: 24px;
+                text-align: center;
+                height: 268px;
+            }
+        
+            .cta-img-m {
+                display: none;
+            }
+        
+            .cta-img-d {
+                display: block;
+            }
+        
+            .btn-cta a {
+                display: flex;
+                padding: 0.5rem 1rem 0.5rem 1rem;
+                align-items: flex-start;
+                gap: 0.5rem;
+                border-radius: 0.625rem;
+                background: #CCE4FF;
+                align-items: center;
+            }
+        
+            .btn-cta a {
+                color: #0077ff;
+                font-weight: bold;
+                margin-bottom: 16px;
+            }
+        
+            .btn-cta :hover {
+                background: #0077ff;
+                color: #ffffff;
+            }
+        
+            /* tabview style  */
+        
+            .tabs::before,
+            .tabs::after {
+                content: "";
+                display: table;
+            }
+        
+            .tabs::after {
+                clear: both;
+            }
+        
+            .tabs {
+                display: inline-flex;
+                margin: 0 0 1rem 0;
+                padding: 3px 6px;
+                width: 100%;
+                background: #ECF4FF;
+                border-radius: 16px;
+            }
+        
+            .tab-switch {
+                display: none;
+            }
+        
+            .tab-label {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                padding: 8px;
+                border-radius: 12px;
+                color: #0077FF;
+                cursor: pointer;
+                top: 0;
+                transition: all 0.25s;
+            }
+        
+            .tab-label:hover {
+                top: -0.25rem;
+                transition: top 0.25s;
+            }
+        
+            .tab-switch:checked+.tab-label {
+                justify-content: center;
+                background: #CCE4FF;
+                color: #0077ff;
+                transition: all 0.35s;
+                font-weight: bold;
+                z-index: 1;
+            }
+        
+            .tab-switch:checked+label+.tab-content {
+                z-index: 2;
+                opacity: 1;
+                transition: all 0.35s;
+            }
+        
+            /* End tabview style  */
+        
+            @media screen and (max-width: 480px) {
+                table {
+                    margin: 0px !important;
+                    width: 100% !important;
+                }
+        
+                .btn-cta a {
+                    display: flex;
+                    width: auto;
+                    align-items: center;
+                    justify-content: center;
+                }
+        
+                .col-md-4 .background-card {
+                    height: auto;
+                }
+        
+                .cta-img-m {
+                    display: block;
+                    text-align: center;
+                    margin-top: 24px;
+                }
+        
+                .col-md-8 {
+                    margin-bottom: 24px;
+                }
+        
+                .cta-img-d {
+                    display: none;
+                }
+            }
+        </style>
+        <!-- End style  -->
+        
+        <!-- intro  -->
+        <div class="background-card">
+            <p>ស្វាគមន៍មកកាន់សេវាផ្ទេរប្រាក់តាម <strong style="color: #A9CF38;">DeeMoney</strong>, ដៃគូផ្ទេរប្រាក់ ដែលគួរឲ្យទុកចិត្ត ដែលឲ្យប្រតិបត្តិការផ្ទេរប្រាក់ពីប្រទេសថៃ មកកម្ពុជារបស់អ្នកកាន់តែងាយស្រួល និងមានសុវត្ថិភាព។ សេវានេះត្រូវបានបង្កើតឡើង ដើម្បីផ្តល់នូវបទពិសោធន៍ផ្ទេរប្រាក់ដ៏រលូន និងធានាបានថាប្រាក់ដែលអ្នកផ្ទេរ នឹងទៅដល់គោលដៅយ៉ាងមានសុវត្ថិភាពបំផុត។ </p>
+            <img alt="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/12/2C2P-banner-2.png" class=" lazyloaded" src="https://www.wingbank.com.kh/wp-content/uploads/2023/12/2C2P-banner-2.png"><noscript><img src="https://www.wingbank.com.kh/wp-content/uploads/2023/12/2C2P-banner-2.png" alt=""></noscript>
+        </div>
+        <div class="space-bottom "></div>
+        <!-- Section Benefits -->
+        <div>
+            <h3><strong>ហេតុអ្វីត្រូវប្រើសេវាផ្ទេរប្រាក់តាម DeeMoney?</strong></h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="background-card">
+                        <img alt="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/10/Affordable.png" class=" lazyloaded" src="https://www.wingbank.com.kh/wp-content/uploads/2023/10/Affordable.png" style="opacity: 1;"><noscript><img
+                                 alt="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/10/Affordable.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
+                                src="https://www.wingbank.com.kh/wp-content/uploads/2023/10/Affordable.png" alt=""></noscript>
+                        <h5><strong>ថ្លៃសេវាផ្ទេរប្រាក់ទាប</strong></h5>
+                        <p>DeeMoney ផ្តល់ជូននូវសេវាផ្ទេរប្រាក់ថេរត្រឹមតែ 125 ថៃបាត អត្រាប្តូរប្រាក់ល្អ និងគ្មានថ្លៃសេវាបន្ថែម។</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="background-card">
+                        <img alt="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/10/Fast.png" class=" lazyloaded" src="https://www.wingbank.com.kh/wp-content/uploads/2023/10/Fast.png" style="opacity: 1;"><noscript><img
+                                 alt="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/10/Fast.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
+                                src="https://www.wingbank.com.kh/wp-content/uploads/2023/10/Fast.png" alt=""></noscript>
+                        <h5><strong>ងាយស្រួល</strong></h5>
+                        <p>អនុញ្ញាតឲ្យអ្នកចុះឈ្មោះប្រើប្រាស់អេប, ផ្ទេរប្រាក់ ឬធ្វើប្រតិបត្តិការផ្សេងៗ លើអេបតែមួយ បានពីគ្រប់ទីកន្លែង។</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="background-card">
+                        <img alt="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/12/Real-time.png" class=" lazyloaded" src="https://www.wingbank.com.kh/wp-content/uploads/2023/12/Real-time.png" style="opacity: 1;"><noscript><img
+                                 alt="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/12/Real-time.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
+                                src="https://www.wingbank.com.kh/wp-content/uploads/2023/12/Real-time.png" alt=""></noscript>
+                        <h5><strong>រហ័ស</strong></h5>
+                        <p>ផ្ទេរប្រាក់ពីថៃ មកកម្ពុជា ហើយប្រាកដថា ប្រាក់នឹងទៅដល់គោលដៅនៅថ្ងៃបន្ទាប់។</p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Features Section -->
-    <div class="container pt-5">
-      <div class="row">
-        <div class="col-12 col-md-6 animate__animated animate__fadeInLeft">
-          <p>Latest Features</p>
-          <h1 class="contact_navbar">Wingpoints</h1>
-          <p>
-            Wingpoints - the coolest customer loyalty program in Cambodia is
-            finally here! Now you can earn Wingpoints when you pay for your
-            dining, shopping, traveling, and more with WingPay QR/Wing Bank KHQR
-          </p>
+        <div class="space-bottom "></div>
+        <!-- វីង App How to Transfer Money with easy2send -->
+        <!-- How to of service  -->
+        <h3><strong>របៀប</strong></h3>
+        <p></p>
+        <!-- tabview  -->
+        <div class="tabs">
+            <div class="tab tab-label" onclick="openCity('send')"><input type="radio" name="css-tabs" id="tab-1" checked="" class="tab-switch">
+                <label for="tab-1" class="tab-label">
+                    ផ្ទេរប្រាក់
+                </label>
+            </div>
+            <div class="tab tab-label" onclick="openCity('receive')"><input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+                <label for="tab-2" class="tab-label">
+                    ទទួលប្រាក់
+                </label>
+            </div>
         </div>
-        <div
-          class="col-12 col-md-6 d-flex justify-content-center animate__animated animate__fadeInRight"
-        >
-          <img
-            class="img-fluid"
-            src="../assets/img/image_section-Redeem.png"
-            width="300"
-            alt="Wingpoints"
-          />
+        <!-- send  -->
+        <div id="send" class="card">
+            <div class="background-card">
+                <div>
+                    <h6><strong>របៀបផ្ទេរប្រាក់តាមអេប DeeMoney</strong></h6>
+                    <!-- DeeMoney App -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img alt="" data-srcset="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/12/hero.webp" class=" lazyloaded" src="https://www.wingbank.com.kh/wp-content/uploads/2023/12/hero.webp"><noscript><img src="https://www.wingbank.com.kh/wp-content/uploads/2023/12/hero.webp" alt="" srcset=""></noscript>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>ដោនឡូតអេប <a><strong>DeeMoney App&ZeroWidthSpace;</strong> </a> ពី Google Play ឬ App Store</li>
+                                <li>ចុះឈ្មោះប្រើប្រាស់</li>
+                                <li>ចុចពាក្យ <a><strong>"ផ្ទេរប្រាក់"</strong></a>និងជ្រើសរើសប្រទេស <a><strong>“កម្ពុជា”</strong></a></li>
+                                <li>បញ្ចូលទឹកប្រាក់ដែលអ្នកចង់ផ្ទេរ ហើយជ្រើសរើសរូបិយប័ណ្ណ,ជាប្រាក់ដុល្លារ ឬបាត ហើយ&ZeroWidthSpace;អ្នកក៏អាចពិនិត្យមើលអត្រាប្តូរប្រាក់នៅលើផ្ទាំងផ្ទេរប្រាក់នោះបានភ្លាមៗ</li>
+                                <li>បញ្ចូលព័ត៌មានអ្នកទទួល ដូចជាឈ្មោះអ្នកទទួល និងគណនីធនាគារជាដើម</li>
+                                <li>បញ្ជាក់ការផ្ទេរប្រាក់ និងតាមដានប្រតិបត្តិការផ្ទេរប្រាក់របស់អ្នកតាមអេប</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <!-- App Features Section -->
-    <div class="container pt-5">
-      <div class="col-12">
-        <h1 class="contact_navbar card-title">App Features</h1>
-      </div>
-      <div class="row">
-        <div class="col-6 animate__animated animate__fadeInUp">
-          <img
-            class="img-fluid"
-            src="../assets/img/balance.png"
-            alt="Balance"
-          />
-          <p>
-            Easy Payments: Just scan the QR code or tap the link to transfer. No
-            more manually entering account numbers.
-          </p>
+        
+        <!-- receive  -->
+        <div id="receive" class="card" style="display: none;">
+            <div class="background-card">
+                <!-- វីង App -->
+                <div>
+                    <!-- <h6><strong>របៀបទទួលប្រាក់</strong></h6> -->
+                    <div>
+                        <h6>ទទួលតាមគណនីធនាគារ វីងផ្ទាល់</h6>
+                        <p>អ្នកទទួលមិនតម្រូវឲ្យធ្វើអ្វីទាំងអស់ លុយនឹងវេរចូលទៅក្នុងគណនីធនាគារ វីងរបស់ពួកគេភ្លាមៗ បន្ទាប់ពីប្រតិបត្តិការផ្ទេរប្រាក់បានជោគជ័យ។</p>
+                        <p><strong style="color: #A9CF38;">តម្រូវការ៖ </strong><em>អ្នកផ្ទេរប្រាក់ត្រូវតែជាអតិថិជនដែលមានគណនីធនាគារ វីង ពេញលេញ (Full KYC) ។  </em></p>
+        
+                        <p></p>
+        
+                        <h6>ទទួលតាមលេខទូរស័ព្ទ</h6>
+                        <p>សម្រាប់ការផ្ទេរមកលេខទូរស័ព្ទអ្នកទទួល លោកអ្នកអាចជ្រើសរើសទទួលប្រាក់តាម 2 របៀបផ្សេងគ្នាដូចខាងក្រោម៖</p>
+                        <p>ទទួលប្រាក់តាមអេប Wing Bank តាមមុខងារលេខកូដមកវីង ដោយប្រើលេខកូដយោង 8 ខ្ទង់ </p>
+                        <div class="background">
+                            <p>អ្នកទទួល អាចទទួលប្រាក់ផ្ទេរបានកាន់តែងាយស្រួលចូលទៅក្នុងគណនីធនាគារ វីងរបស់ពួកគេ ដោយប្រើកូដយោង 10 ខ្ទង់ដែលទទួលបានពីអ្នកផ្ទេរ តាមមុខងារ កូដទៅវីង  និងធ្វើតាមជំហានងាយៗដូចខាងក្រោម៖</p>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img alt="" data-srcset="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/img.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/img.png" alt="" srcset=""></noscript>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>ចូលទៅកាន់អេប <a><strong>Wing Bank app</strong> </a></li>
+                                        <li>ចុចលើ <a><strong>"កូដទៅវីង"</strong></a></li>
+                                        <li>ចុច <a><strong>"វីង"</strong></a></li>
+                                        <li>បំពេញលេខកូដយោង 8 ខ្ទង់</li>
+                                        <li>បំពេញចំនួនទឹកប្រាក់</li>
+                                        <li>បំពេញព័ត៌មានផ្ទាល់ខ្លួន រួចចុច<a> <strong>"ផ្ញើ"</strong></a></li>
+                                        <li>បញ្ជាក់ចំនួនទឹកប្រាក់ រួចចុច <a><strong>"បញ្ជាក់"</strong> </a></li>
+                                        <li>បំពេញលេខកូដសម្ងាត់ <a><strong>"4 ខ្ទង់របស់គណនី"</strong></a> ដើម្បីបញ្ចប់ប្រតិបត្តិការ </li>
+                                    </ul>
+                                </div>
+                            </div>
+        
+                            <p><strong style="color: #A9CF38;">បញ្ជាក់៖ </strong> <em>អតិថិជនត្រូវតែជាអតិថិជនដែលមានគណនីធនាគារ វីងពេញលេញ។ ឈ្មោះ និងនាមត្រកូលរបស់អ្នកទទួលត្រូវតែដូចគ្នាជាមួយនឹងឈ្មោះគណនី។  </em></p>
+                        </div>
+                        <div class="background">
+                            <h6>ដកសាច់ប្រាក់ដោយផ្ទាល់ តាមសាខាធនាគារ វីង ឬទីតាំង វីង ដែលនៅជិត</h6>
+                            <p>អ្នកទទួលអាច ដកប្រាក់នៅតាម សាខាធនាគារ វីង ឬទីតាំង វីង គ្រប់ទីកន្លែង ដោយភ្ជាប់មកជាមួយនូវកសារបញ្ជាក់មួយចំនួនដួចខាងក្រោម៖</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>ភ្ជាប់ជាមួយនូវលេខទូរស័ព្ទ</li>
+                                        <li>លេខកូដយោង 8  ខ្ទង់ដែលទទួលបានពីអ្នកផ្ទេរ </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <img alt="" srcset="" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/12/div.mar-xs-bm.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://www.wingbank.com.kh/wp-content/uploads/2023/12/div.mar-xs-bm.png" alt=""
+                                        srcset=""></noscript>
+                                </div>
+                            </div>
+                            <p><strong style="color: #A9CF38;">បញ្ជាក់៖</strong> <em> ឈ្មោះអ្នកទទួល ត្រូវតែដូចគ្នាទៅនឹងព័ត៌មានដែលអ្នកផ្ទេរបានបញ្ជាក់ក្នុងប្រតិបត្តិការផ្ទេរ។  </em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-6 animate__animated animate__fadeInUp">
-          <img
-            class="img-fluid"
-            src="../assets/img/security.png"
-            alt="Security"
-          />
-          <p>
-            Secure Transactions: Ensure every payment is protected with advanced
-            security measures.
-          </p>
+        
+        <!-- End tabview -->
+        
+        <div class="space-bottom "></div>
+        <!-- Fee កម្រៃសេវា -->
+        <h3><strong>លក្ខខណ្ឌ និងដែនកំណត់</strong></h3>
+        <ul>
+            <li>សម្រាប់ការដកសាច់ប្រាក់តាមវីង៖ បានរហូតដល់ 1,000&ZeroWidthSpace; ដុល្លារ (ប្រមាណជា&ZeroWidthSpace; 35,000 ថៃបាត) ក្នុងមួយប្រតិបត្តិការ និង 3,000 ដុល្លារ&ZeroWidthSpace; (ប្រមាណជា&ZeroWidthSpace; 100,000 ថៃបាត)  ក្នុងមួយថ្ងៃ។</li>
+            <li>សម្រាប់ទទួលប្រាក់តាមរយៈគណនីធនាគារ វីង៖ បានរហូតដល់ 2,500 ដុល្លារ &ZeroWidthSpace; (ប្រមាណជា&ZeroWidthSpace; 80,000 ថៃបាត) ក្នុងមួយប្រតិបត្តិការ និង 5,000 ដុល្លារ &ZeroWidthSpace; (ប្រមាណជា&ZeroWidthSpace; 170,000 ថៃបាត) ក្នុងមួយថ្ងៃ។</li>
+        </ul>
+        <div class="space-bottom "></div>
+        <!-- CTA Khmer-->
+        <div class="background-card" style="background-color: #a8cb374d;">
+            <h3><strong>តើ&ZeroWidthSpace;យើង&ZeroWidthSpace;អាច&ZeroWidthSpace;ជួយ&ZeroWidthSpace;អ្នក&ZeroWidthSpace;ដោយ&ZeroWidthSpace;របៀបណា&ZeroWidthSpace;?</strong></h3>
+            <div class="row">
+                <div class="col-sm-12 cta-img-m">
+                    <img alt="CTA" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/cta-img.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img  alt="CTA" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/cta-img.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/cta-img.png" alt="CTA"></noscript>
+                </div>
+                <div class="col-md-8">
+                    <br>
+                    <p>សម្រាប់ព័ត៌មានបន្ថែមអ្នកអាចទាក់ទងមកកាន់ក្រុមការងារយើងតាម</p>
+                    <div style="padding-top: 12px;">
+                        <div class="row">
+                            <!-- class="btn-cta"  -->
+                            <div class="col-md-6 btn-cta">
+                                <a href="https://wingmoney.onelink.me/oCM5/wingchatweb"><i class="fa-regular fa-comment-dots"></i> វីងឆាត</a>
+                            </div>
+                            <div class="col-md-6 btn-cta">
+                                <a href="https://www.facebook.com/WingBankKH" target="_blank"><i class="fa-brands fa-facebook-messenger"></i> ហ្វេសប៊ុកផេក</a>
+                            </div>
+                            <div class="col-md-6 btn-cta">
+                                <a href="tel:+85523999989"><i class="fa-solid fa-headset"></i> 023 999 989</a>
+                            </div>
+                            <div class="col-md-6 btn-cta">
+                                <a href="https://wa.me/+85523999989" target="_blank"><i class="fa-brands fa-whatsapp"></i> 078
+                                    999 489</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 cta-img-d">
+                    <img alt="CTA" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/cta-img.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img  alt="CTA" data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/cta-img.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://www.wingbank.com.kh/wp-content/uploads/2023/09/cta-img.png" alt="CTA"></noscript>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-
-        <!-- ========================================================================================================================================== -->
-  </main> 
-   <!-- Start Footer -->
-  <footer id="footer" class="footer text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h5>Follow Us</h5>
-          <div class="footer-links mb-3">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">LinkedIn</a>
-          </div>
-          <p>&copy; 2024 Team 2 E6 26 <strong>RUPP</strong></p>
-        </div>
-      </div>
-    </div>
-  </footer>
-    <!-- End Footer -->
-     
-
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
-
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/chart.js/chart.umd.js"></script>
-    <script src="assets/vendor/echarts/echarts.min.js"></script>
-    <script src="assets/vendor/quill/quill.js"></script>
-    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-      <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
-  ></script>
-  <!-- Animate.css -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    
-
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-  </body>
-</html>
+        <!-- End CTA Khmer-->
+        
+        <!-- Script of tabview -->
+        <script>
+            function openCity(card) {
+                var i;
+                var x = document.getElementsByClassName("card");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                console.log(document.getElementById(card));
+                document.getElementById(card).style.display = "block";
+            }
+        </script>
+        <!-- End Script of tabview --></div></div></div></div><div class="space-bottom "></div></section>
