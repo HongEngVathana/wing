@@ -1,418 +1,487 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../assets/css/QR.css" />
-    <link
-      rel="stylesheet"
-      href="../assets/libri/MDB5-STANDARD-UI-KIT-Free-8.1.0/css/mdb.min.css"
-    />
-    <!-- Font Awesome -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <!-- Google Fonts -->
-     <style>
-    table {
-      width: 100%;
-      margin: auto;
-    }
+   <head>
+      <meta charset="utf-8" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <title>Wing </title>
+      <meta content="" name="description" />
+      <meta content="" name="keywords" />
+      <link
+         href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+         rel="stylesheet"
+         />
+      <link href="https://fonts.gstatic.com" rel="preconnect" />
+      <link
+         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+         rel="stylesheet"e
+         />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link href="assets/css/style.css" rel="stylesheet" />
+      <link rel="stylesheet" href="./assets/css/navbar.css">
+      <link rel="stylesheet" href="./assets/vendor/quill/quill.snow.css">
+      <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+      <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+      <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+      <!-- Boost -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+       <!-- End of Boots -->
+      <!-- <link href="assets/css/style.css" rel="stylesheet" /> -->
+       <link rel="stylesheet" href="/wing/assets/css/style.css">
+       <link rel="stylesheet" href="/wing/assets/css/Cashout.css">
+   </head>
+   <body>
+      <!-- Start header -->
+      <header id="header" class="header fixed-top d-flex align-items-center">
+         <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+            <img src="./assets/img/wb-logo-foot.png" alt="" />
+            <span class="d-none d-lg-block">Wing App</span>
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+         </div>
+         <div class="search-bar">
+            <form
+               class="search-form d-flex align-items-center"
+               method="POST"
+               action="#"
+               >
+               <input
+                  type="text"
+                  name="query"
+                  placeholder="Search"
+                  title="Enter search keyword"
+                  />
+               <button type="submit" title="Search">
+               <i class="bi bi-search"></i>
+               </button>
+            </form>
+         </div>
+         <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+            <li class="nav-item d-block d-lg-none">
+               <a class="nav-link nav-icon search-bar-toggle" href="#">
+               <i class="bi bi-search"></i>
+               </a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+               <i class="fa-solid fa-2"></i>
+               <span> E6</span>
+               </a
+                  >
+            </li>
+         </nav>
+      </header>
+      <!-- Endheader -->
+      <!-- Start aside -->
+      <aside id="sidebar" class="sidebar">
+         <ul class="sidebar-nav" id="sidebar-nav">
+            <li class="nav-item">
+               <a class="nav-link" href="index.html">
+               <i class="bi bi-grid"></i>
+               <span>Wing Bank App Overiview</span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link collapsed" href="./Khqr/khqr.html">
+               <i class="fa-solid fa-qrcode"></i>
+               <span>KH QR</span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a
+                  class="nav-link collapsed"
+                  data-bs-target="#components-nav"
+                  data-bs-toggle="collapse"
+                  href="#"
+                  >
+               <i class="fa-solid fa-circle-user"></i><span>Open Your Wing Account</span
+                  ><i class="bi bi-chevron-down ms-auto"></i>
+               </a>
+               <ul
+                  id="components-nav"
+                  class="nav-content collapse"
+                  data-bs-parent="#sidebar-nav"
+                  >
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>International Account Opening</span>
+                     </a>
+                  </li>
+               </ul>
+            </li>
+            <li class="nav-item">
+               <a
+                  class="nav-link collapsed"
+                  data-bs-target="#forms-nav"
+                  data-bs-toggle="collapse"
+                  href="#"
+                  >
+               <i class="fa-solid fa-money-bill-transfer"></i><span>Local Transfer</span
+                  ><i class="bi bi-chevron-down ms-auto"></i>
+               </a>
+               <ul
+                  id="forms-nav"
+                  class="nav-content collapse"
+                  data-bs-parent="#sidebar-nav"
+                  >
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>Wing to Other Bank</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>Wing to Wing Transfers</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>Wing Wei Luy</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>Transfer via NCS</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>Trading Account</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>Trasfer to Own Account</span>
+                     </a>
+                  </li>
+               </ul>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link collapsed" href="#">
+               <i class="fa-solid fa-phone"></i>
+               <span>Phone To Up</span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a
+                  class="nav-link collapsed"
+                  data-bs-target="#tables-nav"
+                  data-bs-toggle="collapse"
+                  href="#"
+                  >
+               <i class="fa-solid fa-globe"></i><span>World</span
+                  ><i class="bi bi-chevron-down ms-auto"></i>
+               </a>
+               <ul
+                  id="tables-nav"
+                  class="nav-content collapse"
+                  data-bs-parent="#sidebar-nav"
+                  >
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>UnionPay</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>Money Gram</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>Merchantrade Asia(MTA)</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>Fin Fan Money Transfer</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>Weixin Money Transfer</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>Hanpass Money Transfers</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>SBI Cosmoney Money</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>SmartSwift Transfers</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>SentBe Money Transfers</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>JRF Money Transfers</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>Sacombank-SBB Transfer</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>Kasikorbank Money Transfer</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>Western Uion</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>2C2P</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>DeeMoney</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>Terrpay</span>
+                     </a>
+                  </li>
+               </ul>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link collapsed" href="#">
+               <i class="fa-solid fa-code"></i>
+               <span>Code to Wing</span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a
+                  class="nav-link collapsed"
+                  data-bs-target="#charts-nav"
+                  data-bs-toggle="collapse"
+                  href="#"
+                  >
+               <i class="fa-solid fa-id-card"></i><span>Card</span
+                  ><i class="bi bi-chevron-down ms-auto"></i>
+               </a>
+               <ul
+                  id="charts-nav"
+                  class="nav-content collapse"
+                  data-bs-parent="#sidebar-nav"
+                  >
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>Debit Cards</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>Credit Cards</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>Public Card</span>
+                     </a>
+                  </li>
+               </ul>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link collapsed" href="#">
+               <i class="fa-solid fa-money-bill"></i>
+               <span>Cash In</span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link collapsed" href="#">
+               <i class="fa-solid fa-money-bill-1"></i>
+               <span>Loans</span>
+               </a>
+            </li>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link collapsed" href="#">
+               <i class="fa-solid fa-money-bill-wave"></i>
+               <span>Bill Payment</span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link collapsed" href="#">
+               <i class="fa-solid fa-hand-point-up"></i>
+               <span>Wingpoints</span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a
+                  class="nav-link collapsed"
+                  data-bs-target="#icons-nav"
+                  data-bs-toggle="collapse"
+                  href="#"
+                  >
+               <i class="fa-solid fa-cash-register"></i><span>Cash Out</span
+                  ><i class="bi bi-chevron-down ms-auto"></i>
+               </a>
+               <ul
+                  id="icons-nav"
+                  class="nav-content collapse"
+                  data-bs-parent="#sidebar-nav"
+                  >
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>Free Cash Out</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     <i class="bi bi-circle"></i><span>Cash Out</span>
+                     </a>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+      </aside>
+      <!-- end aside -->
+      <main id="main" class="main">
+        
+         <div class="container-fluid backgroun-nav py-4">
+            <div class="container">
+               <div class="row align-items-center">
+                  <!-- Left Content -->
+                  <div class="col-12 col-md-6 mb-4 mb-md-0 animate__animated animate__fadeInLeft">
+                    <h3 class="title">ដកប្រាក់ដោយប្រើកាត</h3>
+                    <div>
+                      <p>
+                        <strong>ដកប្រាក់ជាមួយគណនីវីងមិនមែនជាបញ្ហាទៀតនោះទេ!</strong>
+                      </p>
+                      <p>
+                        រាល់ពេលដែលអ្នកត្រូវការសាច់ប្រាក់សុទ្ធ អ្នកអាចទៅកាន់ភ្នាក់ងារវីងដែលមានជិត 11,000 កន្លែងទូទាំងប្រទេស។
+                        ភ្នាក់ងារវីងនឹងជួយអ្នកក្នុងការដកប្រាក់បានយ៉ាងរហ័ស។ ពិសេសជាងនេះទៅទៀត ប្រតិបត្តិការនីមួយៗគឺមានធានាពីសុវត្ថិភាព។ 
+                        អ្នកត្រូវការលេខកូដសម្ងាត់ក្នុងការដកប្រាក់ ហើយមិនមាននរណាផ្សេងពីអ្នកអាចដកប្រាក់ចេញពីគណនីរបស់អ្នកបានឡើយ។ 
+                        រាល់ពេលបញ្ចប់ប្រតិបត្តិការ អ្នកនឹងទទួលបានសារបញ្ជាក់មួយទៅកាន់លេខទូរស័ព្ទរបស់អ្នក។
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Right Content (Image) -->
+                  <div class="col-12 col-md-6 text-center animate__animated animate__fadeInRight">
+                     <img style="border-radius: 18px 0px;"
+                        class="img-fluid"
+                        src="/wing/assets/img/Free_Cash_Out.jpg"
+                        alt="CashOut"
+                        />
+                  </div>
+               </div>
+            </div>
+         </div>
 
-    .inner-banner-text h1 {
-      font-weight: 600;
-      font-size: 38px !important;
-      color: #a9cb37;
-    }
-
-    .inner-banner-text p {
-      color: #898989;
-    }
-
-    .title {
-      color: #a9cf38 !important;
-      font-weight: bold;
-      margin-bottom: 30px !important;
-    }
-
-    .sec-pad.sec-parallax {
-      border-radius: 16px;
-    }
-
-    .sec-pad.sec-parallax h2 {
-      font-weight: bold;
-    }
-
-    table td {
-      text-align: center !important;
-      align-content: center !important;
-    }
-
-    @media only screen and (max-width: 600px) {
-      .inner-banner-text h1 {
-        color: #fff;
-      }
-    }
-
-    .sec-title {
-      font-size: 1.75rem;
-    }
-
-    .layout-1 img {
-      width: 100%;
-      height: auto;
-    }
-
-    .space-bottom {
-      margin-bottom: 30px;
-    }
-  </style>
-  </head>
-
-  <body>
-    <section id="section-0" class="sec-pad is-animated" style="opacity: 1">
-      <div class="layout-1">
-        <div class="container">
-    <div class="row">
-      <div class="col-sm-12 text-left">
-        <h3 class="title">ដកប្រាក់ដោយប្រើកាត</h3>
-        <div>
-          <p>
-            <strong>ដកប្រាក់ជាមួយគណនីវីងមិនមែនជាបញ្ហាទៀតនោះទេ!</strong>
-          </p>
-          <p>
-            រាល់ពេលដែលអ្នកត្រូវការសាច់ប្រាក់សុទ្ធ អ្នកអាចទៅកាន់ភ្នាក់ងារវីងដែលមានជិត 11,000 កន្លែងទូទាំងប្រទេស។
-            ភ្នាក់ងារវីងនឹងជួយអ្នកក្នុងការដកប្រាក់បានយ៉ាងរហ័ស។ ពិសេសជាងនេះទៅទៀត ប្រតិបត្តិការនីមួយៗគឺមានធានាពីសុវត្ថិភាព។ 
-            អ្នកត្រូវការលេខកូដសម្ងាត់ក្នុងការដកប្រាក់ ហើយមិនមាននរណាផ្សេងពីអ្នកអាចដកប្រាក់ចេញពីគណនីរបស់អ្នកបានឡើយ។ 
-            រាល់ពេលបញ្ចប់ប្រតិបត្តិការ អ្នកនឹងទទួលបានសារបញ្ជាក់មួយទៅកាន់លេខទូរស័ព្ទរបស់អ្នក។
-          </p>
-        </div>
-
-        <div>
-          <h4><strong>របៀបដកប្រាក់ពីគណនីវីង</strong></h4>
-          <ol>
-            <li>យកកាតវីងទៅកាន់ភ្នាក់ងារវីងណាមួយ</li>
-            <li>ប្រាប់ភ្នាក់ងារថាអ្នកត្រូវការដកប្រាក់ពីគណនី</li>
-            <li>ប្រាប់ពីចំនួនទឹកប្រាក់ដែលអ្នកចង់ដក ជារៀល ឬ ដុល្លារ</li>
-            <li>ហុចកាតរបស់អ្នកទៅអោយភ្នាក់ងារវីង</li>
-            <li>វាយបញ្ជូលលេខសម្ងាត់ PIN ទៅលើម៉ាស៊ីនវីង ឬ ទូរស័ព្ទរបស់ភ្នាក់ងារវីង</li>
-            <li>ត្រួតពិនិត្យទឹកប្រាក់ និងទទួលយកវិក្កយបត្រពីភ្នាក់ងារវីង</li>
-            <li>អ្នកទទួលបានសារនៅក្នុងទូរស័ព្ទដៃរបស់អ្នក បញ្ជាក់ពីប្រតិបត្តិការដាក់ប្រាក់</li>
-          </ol>
-        </div>
-        <div class="space-bottom"></div>
-
-        <section id="section-1" class="sec-pad sec-parallax is-animated" style="opacity: 1">
+         <section id="section-0" class="sec-pad is-animated" style="opacity: 1">
           <div class="layout-1">
             <div class="container">
-              <div class="row">
-                <div class="col-sm-12 text-center">
-                  <h2 class="sec-title small c-white">
-                    នៅតាមភ្នាក់ងារវីងជិត 11,000 កន្លែងទូទាំងប្រទេស
-                  </h2>
+        <div class="row">
+          <div class="col-sm-12 text-left">
+           
+    
+            <div>
+              <h4><strong>របៀបដកប្រាក់ពីគណនីវីង</strong></h4>
+              <ol>
+                <li>យកកាតវីងទៅកាន់ភ្នាក់ងារវីងណាមួយ</li>
+                <li>ប្រាប់ភ្នាក់ងារថាអ្នកត្រូវការដកប្រាក់ពីគណនី</li>
+                <li>ប្រាប់ពីចំនួនទឹកប្រាក់ដែលអ្នកចង់ដក ជារៀល ឬ ដុល្លារ</li>
+                <li>ហុចកាតរបស់អ្នកទៅអោយភ្នាក់ងារវីង</li>
+                <li>វាយបញ្ជូលលេខសម្ងាត់ PIN ទៅលើម៉ាស៊ីនវីង ឬ ទូរស័ព្ទរបស់ភ្នាក់ងារវីង</li>
+                <li>ត្រួតពិនិត្យទឹកប្រាក់ និងទទួលយកវិក្កយបត្រពីភ្នាក់ងារវីង</li>
+                <li>អ្នកទទួលបានសារនៅក្នុងទូរស័ព្ទដៃរបស់អ្នក បញ្ជាក់ពីប្រតិបត្តិការដាក់ប្រាក់ </li>
+              </ol>
+            </div>
+            <div class="space-bottom"></div>
+    
+            <section id="section-1" class="sec-pad sec-parallax is-animated" style="opacity: 1">
+              <div class="layout-1">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12 text-center">
+                      <h2 class="sec-title small c-white">
+                        នៅតាមភ្នាក់ងារវីងជិត 11,000 កន្លែងទូទាំងប្រទេស
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+                  
+        <div class="container my-4">
+                        <div class="space-bottom"></div>
+                  <div class="fee">
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+                    </div>
+    
+                    
+          <div class="space-bottom"></div>
         </section>
-        <div class="space-bottom"></div>
-
-        <!-- Section fee update 800 riel -->
-        <h3 class="title">ដកប្រាក់ពីគ្រប់ធនាគារត្រឹមតែ 800</h3>
-        <div>
-          <p>
-            លែងជាបញ្ហាសម្រាប់ការដកប្រាក់ពីគ្រប់ធនាគារ! ជាមួយធនាគារ វីង លោកអ្នកអាចដកប្រាក់ពីធនាគារដែលជាសមាជិកបាគងបានយ៉ាងងាយស្រួលតាមរយៈភ្នាក់ងារវីង
-            និងភ្នាក់ងារវីង ម៉ាស្ទ័រ ដែលមានជាង ១១,០០០ ទីតាំង នៅទូទាំងប្រទេស។ 
-            លោកអ្នកអាចធ្វើប្រតិបត្តិការដកប្រាក់ដោយចំណាយចាប់ពី ៨០០រៀលប៉ុណ្ណោះ ដែលធានាបាននូវប្រតិបត្តិការហិរញ្ញវត្ថុប្រចាំថ្ងៃប្រកបដោយប្រសិទ្ធិភាពខ្ពស់ និងរលូនជាមួយធនាគារ វីង។
-          </p>
-          <img
-            alt="Banner English"
-            data-src="https://www.wingbank.com.kh/wp-content/uploads/2024/04/800r-banner-km.jpg"
-            class="lazyloaded img-fluid"
-            src="https://www.wingbank.com.kh/wp-content/uploads/2024/04/800r-banner-km.jpg"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-              
-                <div class="container my-4">
-                    <div class="space-bottom"></div>
-              <div class="fee">
-                <h4 class="title">
-                  កម្រៃសេវា ដកប្រាក់ ពីធនាគារដែលជាសមាជិកបាគង នៅតាម ធនាគារ វីង
-                  ភ្នាក់ងារ វីង និង&ZeroWidthSpace; វីង ម៉ាស្ទ័រ
-                </h4>
-                  <table class="table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th rowspan="2" class="align-middle text-center">
-                          រូបិយប័ណ្ណ
-                        </th>
-                        <th colspan="2" class="text-center">ទំហំសាច់ប្រាក់</th>
-                        <th rowspan="2" class="align-middle text-center">
-                          កម្រៃសេវា
-                        </th>
-                      </tr>
-                      <tr>
-                        <th class="text-center">ចាប់ពី</th>
-                        <th class="text-center">រហូតដល់</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td rowspan="10" class="align-middle text-center">
-                          ប្រាក់ដុល្លារ
-                        </td>
-                        <td class="text-center">5</td>
-                        <td class="text-center">25</td>
-                        <td class="text-center">0.20</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">25.01</td>
-                        <td class="text-center">50</td>
-                        <td class="text-center">0.38</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">50.01</td>
-                        <td class="text-center">100</td>
-                        <td class="text-center">0.50</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">100.01</td>
-                        <td class="text-center">200</td>
-                        <td class="text-center">1.00</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">200.01</td>
-                        <td class="text-center">500</td>
-                        <td class="text-center">1.00</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">500.01</td>
-                        <td class="text-center">1,000.00</td>
-                        <td class="text-center">1.25</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">1,000.01</td>
-                        <td class="text-center">2,000.00</td>
-                        <td class="text-center">2.00</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">2,000.01</td>
-                        <td class="text-center">3,000.00</td>
-                        <td class="text-center">3.00</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">3,000.01</td>
-                        <td class="text-center">4,000.00</td>
-                        <td class="text-center">4.00</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">4,000.01</td>
-                        <td class="text-center">5,000.00</td>
-                        <td class="text-center">4.00</td>
-                      </tr>
-                      <tr>
-                        <td rowspan="10" class="align-middle text-center">
-                          ប្រាក់រៀល
-                        </td>
-                        <td class="text-center">20,000</td>
-                        <td class="text-center">100,000.00</td>
-                        <td class="text-center">800</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">100,100</td>
-                        <td class="text-center">200,000</td>
-                        <td class="text-center">1,500</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">200,100</td>
-                        <td class="text-center">400,000</td>
-                        <td class="text-center">2,000</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">400,100</td>
-                        <td class="text-center">800,000</td>
-                        <td class="text-center">4,000</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">800,100</td>
-                        <td class="text-center">2,000,000</td>
-                        <td class="text-center">4,000</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">2,000,100</td>
-                        <td class="text-center">4,000,000</td>
-                        <td class="text-center">5,000</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">4,000,100</td>
-                        <td class="text-center">8,000,000</td>
-                        <td class="text-center">8,000</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">8,000,100</td>
-                        <td class="text-center">12,000,000</td>
-                        <td class="text-center">12,000</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">12,000,100</td>
-                        <td class="text-center">16,000,000</td>
-                        <td class="text-center">16,000</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">16,000,100</td>
-                        <td class="text-center">20,000,000</td>
-                        <td class="text-center">16,000</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <div class="space-bottom"></div>
-                <h4 class="title">
-                  កម្រៃសេវា ដកប្រាក់ ពីគណនីធនាគារ វីង នៅតាមភ្នាក់ងារ វីង
-                  និង&ZeroWidthSpace; វីង ម៉ាស្ទ័រ
-                </h4>
-                 <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th rowspan="2">រូបិយប័ណ្ណ</th>
-            <th colspan="2">ទំហំសាច់ប្រាក់</th>
-            <th rowspan="2">កម្រៃសេវា</th>
-          </tr>
-          <tr>
-            <th>ចាប់ពី</th>
-            <th>រហូតដល់</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td rowspan="10">ប្រាក់ដុល្លារ</td>
-            <td>0.01</td>
-            <td>25</td>
-            <td>0.20</td>
-          </tr>
-          <tr>
-            <td>25.01</td>
-            <td>50</td>
-            <td>0.38</td>
-          </tr>
-          <tr>
-            <td>50.01</td>
-            <td>100</td>
-            <td>0.50</td>
-          </tr>
-          <tr>
-            <td>100.01</td>
-            <td>200</td>
-            <td>1.00</td>
-          </tr>
-          <tr>
-            <td>200.01</td>
-            <td>500</td>
-            <td>1.00</td>
-          </tr>
-          <tr>
-            <td>500.01</td>
-            <td>1,000</td>
-            <td>1.25</td>
-          </tr>
-          <tr>
-            <td>1,000.01</td>
-            <td>2,000</td>
-            <td>2.00</td>
-          </tr>
-          <tr>
-            <td>2,000.01</td>
-            <td>3,000</td>
-            <td>3.00</td>
-          </tr>
-          <tr>
-            <td>3,000.01</td>
-            <td>4,000</td>
-            <td>4.00</td>
-          </tr>
-          <tr>
-            <td>4,000.01</td>
-            <td>5,000</td>
-            <td>4.00</td>
-          </tr>
-          <tr>
-            <td rowspan="10">ប្រាក់រៀល</td>
-            <td>100</td>
-            <td>100,000</td>
-            <td>800</td>
-          </tr>
-          <tr>
-            <td>100,100</td>
-            <td>200,000</td>
-            <td>1,500</td>
-          </tr>
-          <tr>
-            <td>200,100</td>
-            <td>400,000</td>
-            <td>2,000</td>
-          </tr>
-          <tr>
-            <td>400,100</td>
-            <td>800,000</td>
-            <td>4,000</td>
-          </tr>
-          <tr>
-            <td>800,100</td>
-            <td>2,000,000</td>
-            <td>4,000</td>
-          </tr>
-          <tr>
-            <td>2,000,100</td>
-            <td>4,000,000</td>
-            <td>5,000</td>
-          </tr>
-          <tr>
-            <td>4,000,100</td>
-            <td>8,000,000</td>
-            <td>8,000</td>
-          </tr>
-          <tr>
-            <td>8,000,100</td>
-            <td>12,000,000</td>
-            <td>12,000</td>
-          </tr>
-          <tr>
-            <td>12,000,100</td>
-            <td>16,000,000</td>
-            <td>16,000</td>
-          </tr>
-          <tr>
-            <td>16,000,100</td>
-            <td>20,000,000</td>
-            <td>16,000</td>
-          </tr>
-        </tbody>
-      </table>
-              </div>
+         <!-- ========================================================================================================================================== -->
+      </main>
+      <!-- Start Footer -->
+      <footer id="footer" class="footer text-center">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <h5>Follow Us</h5>
+                  <div class="footer-links mb-3">
+                     <a href="#">Facebook</a>
+                     <a href="#">Twitter</a>
+                     <a href="#">LinkedIn</a>
+                  </div>
+                  <p>&copy; 2024 Team 2 E6 26 <strong>RUPP</strong></p>
+               </div>
             </div>
-          </div>
-        </div>
-      </div>
-                </div>
-
-                
-      <div class="space-bottom"></div>
-    </section>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../assets/libri/MDB5-STANDARD-UI-KIT-Free-8.1.0/js/mdb.umd.min.js"></script>
-  </body>
+         </div>
+      </footer>
+      <!-- End Footer -->
+      <a
+         href="#"
+         class="back-to-top d-flex align-items-center justify-content-center"
+         ><i class="bi bi-arrow-up-short"></i
+         ></a>
+      <!-- Vendor JS Files -->
+      <script src="/wing/assets/vendor/apexcharts/apexcharts.min.js"></script>
+      <script src="/wing/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="/wing/assets/vendor/chart.js/chart.umd.js"></script>
+      <script src="/wing/assets/vendor/echarts/echarts.min.js"></script>
+      <script src="/wing/assets/vendor/quill/quill.js"></script>
+      <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+      <script src="/wing/assets/vendor/tinymce/tinymce.min.js"></script>
+      <script
+         type="text/javascript"
+         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+         ></script>
+      <!-- Animate.css -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+         />
+      <!-- Template Main JS File -->
+      <script src="/wing/assets/js/main.js"></script>
+   </body>
 </html>
+<!-- ----------------------------------------------------- -->
+
