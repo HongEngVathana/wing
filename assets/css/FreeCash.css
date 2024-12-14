@@ -1,0 +1,94 @@
+/* Apply global styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Changed font to 'Roboto' */
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Main section */
+#section-0 {
+    padding: 40px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Section title */
+.sec-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Text paragraphs */
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Strong text */
+strong {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* List items */
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.table tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Additional styles */
+.space-bottom {
+    margin-bottom: 40px;
+}
+
+/* Responsive typography */
+@media screen and (max-width: 768px) {
+    .sec-title {
+        font-size: 28px;
+    }
+
+    p, ul li {
+        font-size: 14px;
+    }
+}
