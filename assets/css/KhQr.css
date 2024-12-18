@@ -61,3 +61,7 @@
     color: blue;
     cursor: pointer;
   }
+  .speacial-text {
+    color: blue;
+    font-weight:bold;
+  }
