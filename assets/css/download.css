@@ -16,3 +16,7 @@
     object-fit: cover;
     border-radius: 3px;
 }
+
+.border-raduis7px{
+    border-radius: 7px;
+}
