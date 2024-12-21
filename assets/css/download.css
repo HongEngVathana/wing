@@ -20,3 +20,36 @@
 .border-raduis7px{
     border-radius: 7px;
 }
+.frame{
+    background-color: wheat;
+    border-radius:10px;
+    width:280px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.margin-bt{
+    margin-bottom: 10px;
+}
+  
+  @media (max-width: 768px) {
+    .container {
+        align-items: center;
+        text-align: center;
+    }
+    .row {
+      justify-content: center;
+    }
+    .col-lg-4 {
+      text-align: center;
+    }
+    .feature-mobile img {
+      margin: 0 auto;
+    }
+  }
+  .col-lg-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
