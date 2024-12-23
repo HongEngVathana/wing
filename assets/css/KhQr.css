@@ -43,3 +43,24 @@
     visibility: visible;
   }
   
+  #khqr{
+    width: 300px;
+    object-fit: cover;
+  }
+  .welcome{
+        color: #5cbc0d;
+        font-weight: 700;
+        padding-bottom: 3rem;
+  }
+
+  .hidden-text {
+    display: none; /* Initially hide the extra text */
+  }
+  .see-more {
+    color: blue;
+    cursor: pointer;
+  }
+  .speacial-text {
+    color: blue;
+    font-weight:bold;
+  }
