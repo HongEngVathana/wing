@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif,'Battambang','Khmer OS';
+  font-family: "Open Sans", sans-serif, "Battambang", "Khmer OS";
   background: #f6f9ff;
   color: #444444;
 }
@@ -1228,4 +1228,159 @@ h6 {
   text-align: center;
   font-size: 13px;
   color: #012970;
+}
+
+/* Hide buttons by default */
+.custom-btn {
+  opacity: 0;
+  visibility: hidden;
+  transition: none; /* Remove transition */
+}
+
+/* Show buttons on carousel hover or focus */
+#carouselDarkVariant:hover .custom-btn,
+#carouselDarkVariant:focus .custom-btn {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Style for carousel control buttons */
+.custom-btn {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border: none;
+  border-radius: 50%; /* Circular shape */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+/* Positioning for previous button */
+.carousel-control-prev {
+  left: 15px;
+}
+
+/* Positioning for next button */
+.carousel-control-next {
+  right: 15px;
+}
+
+/* Hover effect for buttons */
+.custom-btn:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Font Awesome icon styling */
+.custom-btn i {
+  font-size: 20px;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  padding: 20px;
+}
+/* Slider */
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: "";
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
 }
