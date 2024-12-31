@@ -59,51 +59,43 @@
    -->
    <body>
       <!-- Start header -->
-      <header id="header" class="header fixed-top d-flex align-items-center">
-         <div class="d-flex align-items-center justify-content-between">
-            <a href="index.html" class="logo d-flex align-items-center">
-            <img src="./assets/img/wb-logo-foot.png" alt="" />
-            <span class="d-none d-lg-block">Wing App</span>
+         <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="./assets/img/wb-logo-foot.png" alt="" />
+          <span class="d-none d-lg-block">Wing App</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+      </div>
+
+      <div class="search-bar">
+        <form
+          class="search-form d-flex align-items-center"
+          method="POST"
+          action="#"
+        >
+          <input
+            type="text"
+            name="query"
+            placeholder="Search"
+            title="Enter search keyword"
+          />
+          <button type="submit" title="Search">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+      
+
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
             </a>
-            <i class="bi bi-list toggle-sidebar-btn"></i>
-         </div>
-         <div class="search-bar">
-            <form
-               class="search-form d-flex align-items-center"
-               method="POST"
-               action="#"
-               >
-               <input
-                  type="text"
-                  name="query"
-                  placeholder="Search"
-                  title="Enter search keyword"
-                  />
-               <button type="submit" title="Search">
-               <i class="bi bi-search"></i>
-               </button>
-            </form>
-         </div>
-         <nav class="header-nav ms-auto">
-            <ul class="d-flex align-items-center">
-            <li class="nav-item d-block d-lg-none">
-               <a class="nav-link nav-icon search-bar-toggle" href="#">
-               <i class="bi bi-search"></i>
-               </a>
-            </li>
-            <li class="nav-item dropdown">
-               <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-               <i class="fa-solid fa-2"></i>
-               <span> E6</span>
-               </a
-                  >
-            </li>
-         </nav>
-      </header>
-      <!-- Endheader -->
-      <!-- Start aside -->
-     </aside> 
+          </li>
          
+
           <li class="nav-item dropdown">
             <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
               <i class="fa-solid fa-2"></i>
@@ -364,12 +356,12 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="/Cashin/Cash-IntoWAC.html">
+              <a href="../Cashin/Cash-IntoWAC.html">
                 <i class="bi bi-circle"></i><span>Cash-IntoWAC</span>
               </a>
             </li>
             <li>
-              <a href="/Cashin/cashin.html">
+              <a href="../Cashin/cashin.html">
                 <i class="bi bi-circle"></i><span>Cash-In</span>
               </a>
             </li>
@@ -401,36 +393,16 @@
             <span>Wingpoints</span>
           </a>
         </li>
-     
-
-        <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            data-bs-target="#icons-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-           <i class="fa-solid fa-cash-register"></i><span>Cash Out</span
-            ><i class="bi bi-chevron-down ms-auto"></i>
-          </a>
-          <ul
-            id="icons-nav"
-            class="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
-            <li>
-              <a href="../CashOut/freecashout.html">
-                <i class="bi bi-circle"></i><span>Free Cash Out</span>
-              </a>
-            </li>
-            <li>
-              <a href="../CashOut/cashout.html">
-                <i class="bi bi-circle"></i><span>Cash Out</span>
-              </a>
-            </li>
-           
-          </ul>
         </li>
+          <li class="nav-item">
+          <a class="nav-link collapsed" href="../CashOut/cashout.html">
+           
+           <i class="fa-solid fa-cash-register"></i><span>Cash Out</span
+            >
+          </a>
+        </li>
+
+        
       </ul>
       </aside>
           
