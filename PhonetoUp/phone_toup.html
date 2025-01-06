@@ -1,405 +1,343 @@
 <!DOCTYPE html>
-<html lang="en"> 
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<html lang="en">
 
-    <title>Wing </title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
-<link rel="stylesheet" href="./assets/css/navbar.css">
-  
-<link
-    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
-    rel="stylesheet"
-  />
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <link href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Wing </title>
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
+  <link rel="stylesheet" href="./assets/css/navbar.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet" />
+
+  <link href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link
-      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-  
-    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link href="../assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
 
-    <link href="../assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
-    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
-    <link href="../assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="../assets/vendor/quill/quill.snow.css" rel="stylesheet" />
 
-  
-    <link href="../assets/css/style.css" rel="stylesheet" />
-  
+  <link href="../assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+  <link href="../assets/vendor/simple-datatables/style.css" rel="stylesheet" />
 
-  
-  </head>
 
-  <body>
-    <!-- Start header -->
- 
-      <header id="header" class="header fixed-top d-flex align-items-center">
-      <div class="d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
-          <img src="./assets/img/wb-logo-foot.png" alt="" />
-          <span class="d-none d-lg-block">Wing App</span>
-        </a>
-        <i class="bi bi-list toggle-sidebar-btn"></i>
-      </div>
+  <link href="../assets/css/style.css" rel="stylesheet" />
 
-      <div class="search-bar">
-        <form
-          class="search-form d-flex align-items-center"
-          method="POST"
-          action="#"
-        >
-          <input
-            type="text"
-            name="query"
-            placeholder="Search"
-            title="Enter search keyword"
-          />
-          <button type="submit" title="Search">
+
+
+</head>
+
+<body>
+  <!-- Start header -->
+
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="./assets/img/wb-logo-foot.png" alt="" />
+        <span class="d-none d-lg-block">Wing App</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div>
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword" />
+        <button type="submit" title="Search">
+          <i class="bi bi-search"></i>
+        </button>
+      </form>
+    </div>
+
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle" href="#">
             <i class="bi bi-search"></i>
-          </button>
-        </form>
-      </div>
-      
+          </a>
+        </li>
 
-      <nav class="header-nav ms-auto">
-        <ul class="d-flex align-items-center">
-          <li class="nav-item d-block d-lg-none">
-            <a class="nav-link nav-icon search-bar-toggle" href="#">
-              <i class="bi bi-search"></i>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="fa-solid fa-2"></i>
+            <span> E6</span>
+          </a>
+
+        </li>
+
+    </nav>
+
+  </header>
+  <!-- Endheader -->
+
+
+  <!-- Start aside -->
+
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html">
+          <i class="bi bi-grid"></i>
+          <span>Wing Bank App Overiview</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="../index.html">
+          <i class="fa-solid fa-qrcode"></i>
+          <span>KH QR</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <i class="fa-solid fa-circle-user"></i><span>Open Your Wing Account</span><i
+            class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="./Internationalaccountopenting.html">
+              <i class="bi bi-circle"></i><span>International Account Opening</span>
             </a>
           </li>
-         
+        </ul>
+      </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-              <i class="fa-solid fa-2"></i>
-              <span> E6</span>
-              </a
-            >
-            
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="fa-solid fa-money-bill-transfer"></i><span>Local Transfer</span><i
+            class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="../localtranfer/wingto_otherbank.html">
+              <i class="bi bi-circle"></i><span>Wing to Other Bank</span>
+            </a>
+          </li>
+          <li>
+            <a href="../localtranfer/wingto_wingtranfer.html">
+              <i class="bi bi-circle"></i><span>Wing to Wing Transfers</span>
+            </a>
+          </li>
+          <li>
+            <a href="../localtranfer/wing_wei_luy.html">
+              <i class="bi bi-circle"></i><span>Wing Wei Luy</span>
+            </a>
+          </li>
+          <li>
+            <a href="../localtranfer/tranfer_viancs.html">
+              <i class="bi bi-circle"></i><span>Transfer via NCS</span>
+            </a>
+          </li>
+          <li>
+            <a href="../localtranfer/trading_account.html">
+              <i class="bi bi-circle"></i><span>Trading Account</span>
+            </a>
+          </li>
+          <li>
+            <a href="../localtranfer/tranfer_toownaccount.html">
+              <i class="bi bi-circle"></i><span>Trasfer to Own Account</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="../PhonetoUp/phone_toup.html">
+          <i class="fa-solid fa-phone"></i>
+          <span>Phone To Up</span>
+        </a>
+      </li>
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i class="fa-solid fa-globe"></i><span>World</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="tables-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="../Woldtranfer/UnionPay.html">
+              <i class="bi bi-circle"></i><span>UnionPay</span>
+            </a>
+          </li>
+          <li>
+            <a href="../Woldtranfer/MoneyGram.html">
+              <i class="bi bi-circle"></i><span>Money Gram</span>
+            </a>
+          </li>
+          <li>
+            <a href="../Woldtranfer/Merchantrade Asia (MTA).html">
+              <i class="bi bi-circle"></i><span>Merchantrade Asia(MTA)</span>
+            </a>
+          </li>
+          <li>
+            <a href="../Woldtranfer/Finfanmoneytranfer.html">
+              <i class="bi bi-circle"></i><span>Fin Fan Money Transfer</span>
+            </a>
+          </li>
+          <li>
+            <a href="../Woldtranfer/Weixinmoneytranfer.html">
+              <i class="bi bi-circle"></i><span>Weixin Money Transfer</span>
+            </a>
+          </li>
+          <li>
+            <a href="../Woldtranfer/Hanpassmoneytranfer.html">
+              <i class="bi bi-circle"></i><span>Hanpass Money Transfers</span>
+            </a>
           </li>
 
-      </nav>
-      
-    </header>
-    <!-- Endheader -->
+          <li>
+            <a href="../Woldtranfer/SBICosmoneymoneytranfer.html">
+              <i class="bi bi-circle"></i><span>SBI Cosmoney Money</span>
+            </a>
+          </li>
+          <li>
+            <a href="../Woldtranfer/ SmartSwiftmoneytranfer.html">
+              <i class="bi bi-circle"></i><span>SmartSwift Transfers</span>
+            </a>
+          </li>
+          <li>
+            <a href="../Woldtranfer/SentBemoneytranfer.html">
+              <i class="bi bi-circle"></i><span>SentBe Money Transfers</span>
+            </a>
+          </li>
+          <li>
+            <a href="../Woldtranfer/JRFmoneytranfer.html">
+              <i class="bi bi-circle"></i><span>JRF Money Transfers</span>
+            </a>
+          </li>
+          <li>
+            <a href="../Woldtranfer/Sacombank-SBRmoneytranfer.html">
+              <i class="bi bi-circle"></i><span>Sacombank-SBB Transfer</span>
+            </a>
+          </li>
 
-    
-    <!-- Start aside -->
-    
-    <aside id="sidebar" class="sidebar">
-      <ul class="sidebar-nav" id="sidebar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="../index.html">
-            <i class="bi bi-grid"></i>
-            <span>Wing Bank App Overiview</span>
-          </a>
-        </li>
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="../DownloadApp/download.html">
-            <i class="fa-solid fa-download"></i>
-            <span>Download App & Register</span>
-        </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link collapsed" href="../MyAccount/myAccount.html">
-        <i class="fa-solid fa-money-check-dollar"></i>
-          <span>My Account</span>
-      </a>
-  </li>
+          <li>
+            <a href="../Woldtranfer/ Kasikornbankmoneytranfer.html">
+              <i class="bi bi-circle"></i><span>Kasikorbank Money Transfer</span>
+            </a>
+          </li>
+          <li>
+            <a href="../Woldtranfer/Western Union.html">
+              <i class="bi bi-circle"></i><span>Western Uion</span>
+            </a>
+          </li>
+          <li>
+            <a href="../Woldtranfer/2C2P.html">
+              <i class="bi bi-circle"></i><span>2C2P</span>
+            </a>
+          </li>
+          <li>
+            <a href="../Woldtranfer/DeeMoney.html">
+              <i class="bi bi-circle"></i><span>DeeMoney</span>
+            </a>
+          </li>
+          <li>
+            <a href="../Woldtranfer/Terrapay.html">
+              <i class="bi bi-circle"></i><span>Terrpay</span>
+            </a>
+          </li>
+
+
+
+        </ul>
+      </li>
       <li class="nav-item">
-          <a class="nav-link collapsed" href="../Khqr/khqr.html">
-            <i class="fa-solid fa-qrcode"></i>
-            <span>KH QR</span>
-          </a>
-        </li>
+        <a class="nav-link collapsed" href="../Codetowing/codetowing.html">
+          <i class="fa-solid fa-code"></i>
+          <span>Code to Wing</span>
+        </a>
+      </li>
 
 
-        <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            data-bs-target="#forms-nav"
-            data-bs-toggle="collapse"
-            href="../localtranfer/trading_account.html"
-          >
-          <i class="fa-solid fa-money-bill-transfer"></i><span>Local Transfer</span
-            ><i class="bi bi-chevron-down ms-auto"></i>
-          </a>
-          <ul
-            id="forms-nav"
-            class="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
-            <li>
-              <a href="../localtranfer/wingto_otherbank.html">
-                <i class="bi bi-circle"></i><span>Wing to Other Bank</span>
-              </a>
-            </li>
-            <li>
-              <a href="../localtranfer/wingto_wingtranfer.html">
-                <i class="bi bi-circle"></i><span>Wing to Wing Transfers</span>
-              </a>
-            </li>
-            <li>
-              <a href="../localtranfer/wing_wei_luy.html">
-                <i class="bi bi-circle"></i><span>Wing Wei Luy</span>
-              </a>
-            </li>
-            <li>
-              <a href="../localtranfer/tranfer_viancs.html">
-                <i class="bi bi-circle"></i><span>Transfer via NCS</span>
-              </a>
-            </li>
-            <li>
-              <a href="../localtranfer/trading_account.html">
-                <i class="bi bi-circle"></i><span>Trading Account</span>
-              </a>
-            </li>
-            <li>
-              <a href="../localtranfer/tranfer_toownaccount.html">
-                <i class="bi bi-circle"></i><span>Trasfer to Own Account</span>
-              </a>
-            </li>
-          </ul>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link collapsed" href="../PhonetoUp/phone_toup.html">
-           <i class="fa-solid fa-phone"></i>
-            <span>Phone To Up</span>
-          </a>
-        </li>
-     
 
-        <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            data-bs-target="#tables-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-            <i class="fa-solid fa-globe"></i><span>World</span
-            ><i class="bi bi-chevron-down ms-auto"></i>
-          </a>
-          <ul
-            id="tables-nav"
-            class="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
-            <li>
-              <a href="../Woldtranfer/UnionPay.html">
-                <i class="bi bi-circle"></i><span>UnionPay</span>
-              </a>
-            </li>
-            <li>
-              <a href="../Woldtranfer/MoneyGram.html">
-                <i class="bi bi-circle"></i><span>Money Gram</span>
-              </a>
-            </li>
-             <li>
-              <a href="../Woldtranfer/Merchantrade Asia (MTA).html">
-                <i class="bi bi-circle"></i><span>Merchantrade Asia(MTA)</span>
-              </a>
-            </li>
-             <li>
-              <a href="../Woldtranfer/Finfanmoneytranfer.html">
-                <i class="bi bi-circle"></i><span>Fin Fan Money Transfer</span>
-              </a>
-            </li>
-             <li>
-              <a href="../Woldtranfer/Weixinmoneytranfer.html">
-                <i class="bi bi-circle"></i><span>Weixin Money Transfer</span>
-              </a>
-            </li>
-             <li>
-              <a href="../Woldtranfer/Hanpassmoneytranfer.html">
-                <i class="bi bi-circle"></i><span>Hanpass Money Transfers</span>
-              </a>
-            </li>
 
-             <li>
-              <a href="../Woldtranfer/SBICosmoneymoneytranfer.html">
-                <i class="bi bi-circle"></i><span>SBI Cosmoney Money</span>
-              </a>
-            </li>
-             <li>
-              <a href="../Woldtranfer/ SmartSwiftmoneytranfer.html">
-                <i class="bi bi-circle"></i><span>SmartSwift Transfers</span>
-              </a>
-            </li>
-             <li>
-              <a href="../Woldtranfer/SentBemoneytranfer.html">
-                <i class="bi bi-circle"></i><span>SentBe Money Transfers</span>
-              </a>
-            </li>
-            <li>
-              <a href="../Woldtranfer/JRFmoneytranfer.html">
-                <i class="bi bi-circle"></i><span>JRF Money Transfers</span>
-              </a>
-            </li>
-            <li>
-              <a href="../Woldtranfer/Sacombank-SBRmoneytranfer.html">
-                <i class="bi bi-circle"></i><span>Sacombank-SBB Transfer</span>
-              </a>
-            </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+          <i class="fa-solid fa-id-card"></i><span>Card</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="charts-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="../Card/creditcard.html">
+              <i class="bi bi-circle"></i><span>Debit Cards</span>
+            </a>
+          </li>
+          <li>
+            <a href="../Card/Debit Cards.html">
+              <i class="bi bi-circle"></i><span>Credit Cards</span>
+            </a>
+          </li>
+          <li>
+            <a href="../Card/Public Cards.html">
+              <i class="bi bi-circle"></i><span>Public Card</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="../Cashin/cashin.html">
+          <i class="fa-solid fa-money-bill"></i>
+          <span>Cash In</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="../Loans/digitaloan.html">
+          <i class="fa-solid fa-money-bill-1"></i>
+          <span>Loans</span>
+        </a>
+      </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="../Billpayment/EDCsubscription.html">
+          <i class="fa-solid fa-money-bill-wave"></i>
+          <span>Bill Payment</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="../Wingpoints/Wingpoints.html">
+          <i class="fa-solid fa-hand-point-up"></i>
+          <span>Wingpoints</span>
+        </a>
+      </li>
 
-            <li>
-              <a href="../Woldtranfer/ Kasikornbankmoneytranfer.html">
-                <i class="bi bi-circle"></i><span>Kasikorbank Money Transfer</span>
-              </a>
-            </li>
-             <li>
-              <a href="../Woldtranfer/Western Union.html">
-                <i class="bi bi-circle"></i><span>Western Uion</span>
-              </a>
-            </li>
-             <li>
-              <a href="../Woldtranfer/2C2P.html">
-                <i class="bi bi-circle"></i><span>2C2P</span>
-              </a>
-            </li>
-             <li>
-              <a href="../Woldtranfer/DeeMoney.html">
-                <i class="bi bi-circle"></i><span>DeeMoney</span>
-              </a>
-            </li>
-              <li>
-              <a href="../Woldtranfer/Terrapay.html">
-                <i class="bi bi-circle"></i><span>Terrpay</span>
-              </a>
-            </li>
-           
-          </ul>
-        </li>
-          <li class="nav-item">
-          <a class="nav-link collapsed" href="../Codetowing/codetowing.html">
-            <i class="fa-solid fa-code"></i>
-            <span>Code to Wing</span>
-          </a>
-        </li>
 
-        
-     
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+          <i class="fa-solid fa-cash-register"></i><span>Cash Out</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="icons-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="../CashOut/freecashout.html">
+              <i class="bi bi-circle"></i><span>Free Cash Out</span>
+            </a>
+          </li>
+          <li>
+            <a href="../CashOut/cashout.html">
+              <i class="bi bi-circle"></i><span>Cash Out</span>
+            </a>
+          </li>
 
-        <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            data-bs-target="#charts-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-            <i class="fa-solid fa-id-card"></i><span>Card</span
-            ><i class="bi bi-chevron-down ms-auto"></i>
-          </a>
-          <ul
-            id="charts-nav"
-            class="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
-            <li>
-              <a href="../Card/creditcard.html">
-                <i class="bi bi-circle"></i><span>Debit Cards</span>
-              </a>
-            </li>
-            <li>
-              <a href="../Card/Debit Cards.html">
-                <i class="bi bi-circle"></i><span>Credit Cards</span>
-              </a>
-            </li>
-            <li>
-              <a href="../Card/Public Cards.html">
-                <i class="bi bi-circle"></i><span>Public Card</span>
-              </a>
-            </li>
-          </ul>
-        </li>
+        </ul>
+      </li>
+    </ul>
+  </aside>
 
-        <!-- Cash IN  -->
-        <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            data-bs-target="#cashin-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-          <i class="fa-solid fa-money-bill"></i><span>Cash-in</span
-            ><i class="bi bi-chevron-down ms-auto"></i>
-          </a>
-          <ul
-            id="cashin-nav"
-            class="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
-            <li>
-              <a href="../Cashin/Cash-IntoWAC.html">
-                <i class="bi bi-circle"></i><span>Cash-IntoWAC</span>
-              </a>
-            </li>
-            <li>
-              <a href="../Cashin/cashin.html">
-                <i class="bi bi-circle"></i><span>Cash-In</span>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <!--  -->
-         <!-- <li class="nav-item">
-          <a class="nav-link collapsed" href="../Cashin/cashin.html">
-            <i class="fa-solid fa-money-bill"></i>
-            <span>Cash In</span>
-          </a>
-        </li> -->
-         <li class="nav-item">
-          <a class="nav-link collapsed" href="../Loans/digitaloan.html">
-           <i class="fa-solid fa-money-bill-1"></i>
-            <span>Loans</span>
-          </a>
-        </li>
-         </li>
-         <li class="nav-item">
-          <a class="nav-link collapsed" href="../Billpayment/EDCsubscription.html">
-           <i class="fa-solid fa-money-bill-wave"></i>
-            <span>Bill Payment</span>
-          </a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link collapsed" href="../Wingpoints/Wingpoints.html">
-            <i class="fa-solid fa-hand-point-up"></i>
-            <span>Wingpoints</span>
-          </a>
-        </li>
-        </li>
-          <li class="nav-item">
-          <a class="nav-link collapsed" href="../CashOut/cashout.html">
-           
-           <i class="fa-solid fa-cash-register"></i><span>Cash Out</span
-            >
-          </a>
-        </li>
+  <!-- end aside -->
 
-        
-      </ul>
-      </aside>
-          
-    <!-- end aside -->
-      
-      
-      <main id="main" class="main">
+
+  <main id="main" class="main">
 
     <!-- <div class="pagetitle">
       <h1></h1>
@@ -414,312 +352,274 @@
     <!-- ================================================================================================================================================ -->
 
     <!-- Main Section -->
-     <section id="section-0" class="sec-pad is-animated" style="opacity: 1;"><div class="layout-1 "><div class="container "><div class="row"><div class="col-sm-12 text-left"><style>
-      
-        .center-img {
-            text-align: center;
-            margin: 16px;
-        }
-    
-    
-        .background-card {
-            border-radius: 10px;
-            background-color: #f5f6f8;
-            padding: 16px;
-        }
-    
-        #phone-top-up h3 {
-            color: #A9CB37 !important;
-        } 
-        .col-md-6 .background-card {
-            margin-top: 30px;
-            height: 210px;
-        }
-    
-        .cta-img-m {
-            display: none;
-        }
-    
-        .cta-img-d {
-            display: block;
-        }
-    
-        .btn-cta a {
-            display: flex;
-            padding: 0.5rem 1rem 0.5rem 1rem;
-            align-items: flex-start;
-            gap: 0.5rem;
-            border-radius: 0.625rem;
-            background: #CCE4FF;
-            width: auto;
-            align-items: center;
-        }
-    
-        .btn-cta a {
-            color: #0077ff;
-            font-weight: bold;
-        }
-    
-        .btn-cta :hover {
-            background: #0077ff;
-            color: #ffffff;
-        }
-    
-        .mobile-provider {
-            padding-bottom: 25px;
-            padding-top: 25px;
-        }
-    
-        .item-list {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-    
-        .item {
-            width: auto;
-            height: 60px;
-            margin-top: 24px;
-        }
-    
-        .video-section h4 {
-            margin-bottom: 16px;
-            font-weight: bold;
-        }
-    
-        .video-section iframe {
-            border-radius: 10px;
-        }
-    
-        .how-to {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 30px;
-        }
-    
-        .how-to .how-to-info h4 {
-            padding-bottom: 16px;
-            font-weight: bold;
-        }
-    
-        @media screen and (max-width: 480px) {
-            .banner-inner {
-                max-height: 550px !important;
-                height: 550px !important;
-                padding-bottom: 0;
-            }
-    
-            .inner-banner-text p {
-                margin-bottom: 320px;
-            }
-    
-            .banner-inner .coverimage {
-                position: relative;
-                min-height: 280px;
-                top: 0px;
-            }
-    
-    
-            .background-card {
-                height: auto;
-                margin-bottom: 24px;
-            }
-    
-            .item-list {
-                flex-wrap: wrap;
-            }
-    
-            .center-img {
-                /* text-align: center; */
-                margin: 0px 12px 24px 0px;
-                float: left;
-            }
-    
-            .btn-cta a {
-                display: flex;
-                width: auto;
-                align-items: center;
-                justify-content: center;
-                padding: 0.8rem;
-                margin-top: 12px;
-            }
-    
-            .col-md-6 .background-card {
-                height: auto;
-            }
-    
-            .col-md-6 ul{
-                padding-top: 24px;
-            }
-    
-            .cta-img-m {
-                display: block;
-                text-align: center;
-            }
-    
-            .background-card .col-md-8 {
-                margin-bottom: 24px;
-            }
-    
-            .cta-img-d {
-                display: none;
-            }
-        }
-    </style>
-    <!-- Intro  -->
-    <div id="phone-top-up">
-      <div class="space-bottom"></div>
-      <!-- How to Section -->
-      <div class="how-to">
-          <h3><b>របៀបបញ្ចូលលុយទូរស័ព្ទតាម ធនាគារវីង(WING BANK)</b></h3>
-  
-          <!-- Wing Bank Top-Up -->
-          <div class="how-to-info">
-              <div class="row">
-                  <div class="col-md-6 col-12">
-                      <h4>ជំហានទី១​ ៖ យើងត្រូវចុចចូលកម្មវិធីធនាគារវីង(WING BANK)</h4>
-                  </div>
-                  <div class="col-md-6 col-12 text-center">
-                      <img 
-                          alt="Phone-Number" 
-                          src="../assets/img/phonetopup1.jpg"
-                          class="img-fluid lazyload rounded" 
-                          width="250px"
-                      >
-                  </div>
-              </div>
-          </div>
-  
-          <div class="how-to-info mt-3">
-              <div class="row">
-                  <div class="col-md-6 col-12">
-                      <h4>ជំហានទី២​ ៖ យើងត្រូវចុចចូលបញ្ចូលលុយទូរស័ព្ទ(Phone Top Up)</h4>
-                  </div>
-                  <div class="col-md-6 col-12 text-center">
-                      <img 
-                          alt="Phone-Number" 
-                          src="../assets/img/phonetopup2.jpg"
-                          class="img-fluid lazyload rounded" 
-                          width="250px"
-                      >
-                  </div>
-              </div>
-          </div>
-  
-          <div class="how-to-info mt-3">
-              <div class="row">
-                  <div class="col-md-6 col-12">
-                      <h4>ជំហានទី៣ ៖ វាយបញ្ចូលលេខកូដសម្ងាត់៤ខ្ទង់​របស់អ្នក(PIN)</h4>
-                  </div>
-                  <div class="col-md-6 col-12 text-center">
-                      <img 
-                          alt="Phone-Number" 
-                          src="../assets/img/phonetopup3.jpg"
-                          class="img-fluid lazyload rounded" 
-                          width="250px"
-                      >
-                  </div>
-              </div>
-          </div>
-  
-          <div class="how-to-info mt-3">
-              <div class="row">
-                  <div class="col-md-3 col-12">
-                      <h4>ជំហានទី៤​ ៖</h4>
-                      <p>នោះអ្នកនិងឃើញជម្រើសពីរក្នុងការបញ្ចូលលុយទូរស័ព្ទ</p>
-                      <ul>
-                          <li>
-                              <p>បញ្ចូលលុយតាមរយៈលេខទូរស័ព្ទ</p>
-                          </li>
-                      </ul>
-                  </div>
-                  <div class="col-md-3 col-12 text-center">
-                      <img 
-                          alt="Phone-Number" 
-                          src="../assets/img/phonetopup4.jpg"
-                          class="img-fluid lazyload rounded" 
-                          width="250px"
-                      >
-                  </div>
-                  <div class="col-md-3 col-12">
-                      <ul>
-                          <li>
-                              <p>វាយបញ្ចូលលេខទូរស័ព្ទរបស់អ្នកដែលចង់បញ្ចូលលុយ</p>
-                          </li>
-                          <li>
-                              <p>រើសចំនួនទឹកប្រាក់ដែលអ្នកចង់បញ្ចូលលុយ</p>
-                          </li>
-                      </ul>
-                  </div>
-                  <div class="col-md-3 col-12 text-center">
-                      <img 
-                          alt="Phone-Number" 
-                          src="../assets/img/phonetopup6.jpg"
-                          class="img-fluid lazyload rounded" 
-                          width="250px"
-                      >
-                  </div>
-                  <div class="col-md-3 col-12">
+    <section id="section-0" class="sec-pad is-animated" style="opacity: 1;">
+      <div class="layout-1 ">
+        <div class="container ">
+          <div class="row">
+            <div class="col-sm-12 text-left">
+              <style>
+                .center-img {
+                  text-align: center;
+                  margin: 16px;
+                }
+
+
+                .background-card {
+                  border-radius: 10px;
+                  background-color: #f5f6f8;
+                  padding: 16px;
+                }
+
+                #phone-top-up h3 {
+                  color: #A9CB37 !important;
+                }
+
+                .col-md-6 .background-card {
+                  margin-top: 30px;
+                  height: 210px;
+                }
+
+                .cta-img-m {
+                  display: none;
+                }
+
+                .cta-img-d {
+                  display: block;
+                }
+
+                .btn-cta a {
+                  display: flex;
+                  padding: 0.5rem 1rem 0.5rem 1rem;
+                  align-items: flex-start;
+                  gap: 0.5rem;
+                  border-radius: 0.625rem;
+                  background: #CCE4FF;
+                  width: auto;
+                  align-items: center;
+                }
+
+                .btn-cta a {
+                  color: #0077ff;
+                  font-weight: bold;
+                }
+
+                .btn-cta :hover {
+                  background: #0077ff;
+                  color: #ffffff;
+                }
+
+                .mobile-provider {
+                  padding-bottom: 25px;
+                  padding-top: 25px;
+                }
+
+                .item-list {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: flex-start;
+                }
+
+                .item {
+                  width: auto;
+                  height: 60px;
+                  margin-top: 24px;
+                }
+
+                .video-section h4 {
+                  margin-bottom: 16px;
+                  font-weight: bold;
+                }
+
+                .video-section iframe {
+                  border-radius: 10px;
+                }
+
+                .how-to {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  gap: 30px;
+                }
+
+                .how-to .how-to-info h4 {
+                  padding-bottom: 16px;
+                  font-weight: bold;
+                }
+
+                @media screen and (max-width: 480px) {
+                  .banner-inner {
+                    max-height: 550px !important;
+                    height: 550px !important;
+                    padding-bottom: 0;
+                  }
+
+                  .inner-banner-text p {
+                    margin-bottom: 320px;
+                  }
+
+                  .banner-inner .coverimage {
+                    position: relative;
+                    min-height: 280px;
+                    top: 0px;
+                  }
+
+
+                  .background-card {
+                    height: auto;
+                    margin-bottom: 24px;
+                  }
+
+                  .item-list {
+                    flex-wrap: wrap;
+                  }
+
+                  .center-img {
+                    /* text-align: center; */
+                    margin: 0px 12px 24px 0px;
+                    float: left;
+                  }
+
+                  .btn-cta a {
+                    display: flex;
+                    width: auto;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0.8rem;
+                    margin-top: 12px;
+                  }
+
+                  .col-md-6 .background-card {
+                    height: auto;
+                  }
+
+                  .col-md-6 ul {
+                    padding-top: 24px;
+                  }
+
+                  .cta-img-m {
+                    display: block;
+                    text-align: center;
+                  }
+
+                  .background-card .col-md-8 {
+                    margin-bottom: 24px;
+                  }
+
+                  .cta-img-d {
+                    display: none;
+                  }
+                }
+              </style>
+              <!-- Intro  -->
+              <div id="phone-top-up">
+                <!-- Introduction -->
+                <div class="space-bottom"></div>
+
+                <!-- How-to Section -->
+                <div class="how-to">
+                  <h3><b>របៀបបញ្ចូលលុយទូរស័ព្ទតាម ធនាគារវីង (WING BANK)</b></h3>
+                  <div class="row justify-content-center align-items-center my-4">
                     <ul>
-                        <li>
-                            <p>ចុចពាក្យបញ្ជាក់</p>
-                        </li>
+                      <li>
+                        <h4 class="text-center text-primary font-weight-bold">បញ្ចូលលុយតាមលេខទូរស័ព្ទ</h4>
+                      </li>
                     </ul>
+                  </div>
+                  <!-- Step 1 -->
+                  <div class="how-to-info mt-4">
+                    <div class="row">
+                      <div class="col-md-3 col-12">
+                        <h4>ជំហានទី១ ៖ ចូលកម្មវិធីធនាគារវីង (WING BANK)</h4>
+                      </div>
+                      <div class="col-md-3 col-12 text-center">
+                        <img alt="Open Wing Bank App screen" src="../assets/img/phonetopup1.png"
+                          class="img-fluid lazyload rounded" width="250">
+                      </div>
+                      <div class="col-md-3 col-12">
+                        <h4>ជំហានទី២ ៖ ចុចបញ្ចូលលុយទូរស័ព្ទ (Phone Top Up)</h4>
+                      </div>
+                      <div class="col-md-3 col-12 text-center">
+                        <img alt="Phone Top Up screen" src="../assets/img/phonetopup2.png"
+                          class="img-fluid lazyload rounded" width="250">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="how-to-info mt-4">
+                    <div class="row">
+                      <div class="col-md-3 col-12">
+                        <h4>ជំហានទី៣ ៖ វាយបញ្ចូលលេខកូដសម្ងាត់ ៤ ខ្ទង់ (PIN)</h4>
+                      </div>
+                      <div class="col-md-3 col-12 text-center">
+                        <img alt="Open Wing Bank App screen" src="../assets/img/phonetopup3.jpg"
+                          class="img-fluid lazyload rounded" width="250">
+                      </div>
+                      <div class="col-md-3 col-12">
+                        <h4>ជំហានទី៤ ៖</h4>
+                        <p>អ្នកនឹងឃើញជម្រើសពីរក្នុងការបញ្ចូលលុយទូរស័ព្ទ:</p>
+                        <ul>
+                          <li>វាយបញ្ចូលលេខទូរស័ព្ទដែលអ្នកចង់បញ្ចូលលុយ</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-3 col-12 text-center">
+                        <img alt="Phone Top Up screen" src="../assets/img/phonetopup4.png"
+                          class="img-fluid lazyload rounded" width="250">
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Step 3 -->
+                  <div class="how-to-info mt-4">
+                    <div class="row">
+                      <div class="col-md-3 col-12">
+                        <ul>
+                          <li>រើសចំនួនទឹកប្រាក់ដែលអ្នកចង់បញ្ចូល</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-3 col-12 text-center">
+                        <img alt="Phone Number Option screen" src="../assets/img/phonetopup4.1.png"
+                          class="img-fluid lazyload rounded" width="250">
+                      </div>
+                      <div class="col-md-3 col-12">
+                        <ul>
+                          <li>ចុចពាក្យបញ្ជាក់</li>
+                          <li>វាយបញ្ចូលលេខកូដសម្ងាត់ ៤ ខ្ទង់ (PIN)</li>
+                          <li>បន្ទាប់ពីអ្នកវាយបញ្ចូល PIN នោះ អ្នកនឹងបញ្ចូលលុយបានដោយជោគជ័យ</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-3 col-12 text-center">
+                        <img alt="Enter amount screen" src="../assets/img/phonetopup4.2.png"
+                          class="img-fluid lazyload rounded" width="250">
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-3 col-12 text-center">
-                    <img 
-                        alt="Phone-Number" 
-                        src="../assets/img/phonetopup7.jpg"
-                        class="img-fluid lazyload rounded" 
-                        width="250px"
-                    >
-                </div>
-              <div class="col-md-3 col-12">
-                <ul>
-                    <li>
-                        <p>វាយបញ្ចូលលេខកូដសម្ងាត់៤ខ្ទង់​របស់អ្នក(PIN)ដើម្បីបញ្ចូលលុយ</p>
-                    </li>
-                    <li>
-                      <p>បន្ទាប់ពីអ្នកវាយបញ្ចូលលេខកូដសម្ងាត់៤ខ្ទង់នោះ​ អ្នកនិងបញ្ចូលលុយទូរស័ព្ទបានដោយជោគជ័យ</p>
-                  </li>
-                </ul>
-            </div>
-            <div class="col-md-3 col-12 text-center">
-                <img 
-                    alt="Phone-Number" 
-                    src="../assets/img/phonetopup3.jpg"
-                    class="img-fluid lazyload rounded" 
-                    width="250px"
-                >
-            </div>
+                <!-- Video Section -->
+                <div class="video-section col-12 mt-5">
+                  <h4>មើលវីដេអូនេះ ដើម្បីដឹងពីរបៀបនៃការប្រើប្រាស់អេប:</h4>
+                  <div class="epyt-video-wrapper fluid-width-video-wrapper" style="position: relative; width: 100%; height: 0; padding-top: 56.25%; overflow: hidden;">
+                      <iframe 
+                          src="https://www.youtube.com/embed/kMyOe3AZiRo"
+                          title="វិធីងាយៗបញ្ចូលលុយទូរស័ព្ទតាម Wing Bank App"
+                          allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+                      ></iframe>
+                  </div>
               </div>
+              </div>
+            </div>
           </div>
-      </div>
-        
-      <!-- Video Section -->
-      <div class="video-section col-12 mt-5">
-        <h4>មើលវីដេអូនេះ ដើម្បីដឹងពីរបៀបនៃការប្រើប្រាស់អេប (របៀបបញ្ចូលលុយទូរស័ព្ទតាម App)៖</h4>
-        <div class="epyt-video-wrapper fluid-width-video-wrapper" style="position: relative; width: 100%; height: 0; padding-top: 56.25%; overflow: hidden;">
-            <iframe 
-                src="https://www.youtube.com/embed/kMyOe3AZiRo"
-                title="វិធីងាយៗបញ្ចូលលុយទូរស័ព្ទតាម Wing Bank App"
-                allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
-            ></iframe>
         </div>
       </div>
+      <div class="space-bottom "></div>
+    </section>
 
-  </div>
-  
-</div></div></div></div><div class="space-bottom "></div></section>
-   
-  
 
-        <!-- ========================================================================================================================================== -->
-  </main> 
-   <!-- Start Footer -->
+
+    <!-- ========================================================================================================================================== -->
+  </main>
+  <!-- Start Footer -->
   <footer id="footer" class="footer text-center">
     <div class="container">
       <div class="row">
@@ -735,36 +635,28 @@
       </div>
     </div>
   </footer>
-    <!-- End Footer -->
-     
+  <!-- End Footer -->
 
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
 
-    <!-- Vendor JS Files -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
-    <script src="../assets/vendor/apexcharts/apexcharts.min.js"></script>
-    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/vendor/chart.js/chart.umd.js"></script>
-    <script src="../assets/vendor/echarts/echarts.min.js"></script>
-    <script src="../assets/vendor/quill/quill.js"></script>
-    <script src="../assets/vendor/simple-datatables/simple-datatables.js"></script>
-    <script src="../assets/vendor/tinymce/tinymce.min.js"></script>
-      <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
-  ></script>
+  <!-- Vendor JS Files -->
+
+  <script src="../assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="../assets/vendor/echarts/echarts.min.js"></script>
+  <script src="../assets/vendor/quill/quill.js"></script>
+  <script src="../assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="../assets/vendor/tinymce/tinymce.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
   <!-- Animate.css -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <!-- Template Main JS File -->
-    <script src="../assets/js/main.js"></script>
-  </body>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+</body>
+
 </html>
